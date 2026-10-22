@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://api.earninghandle.com/LowerApi/admin/migrate-lowercase/run
+  url: https://api.earninghandle.com/LowerApi/admin/migrate-lowercase/runsdfghjk
   body:
     type: json
     data: ""
