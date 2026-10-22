@@ -5,15 +5,16 @@ info:
 
 http:
   method: GET
-  url: http://localhost:4500/api/community-blogs/getBlogsAdmin?approved=false
+  url: http://localhost:4500/api/community-blogs/getBlogsAdmin
   params:
     - name: userId
       value: ""
       type: query
       disabled: true
     - name: approved
-      value: "false"
+      value: ""
       type: query
+      disabled: true
   body:
     type: multipart-form
     data:

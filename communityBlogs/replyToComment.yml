@@ -1,0 +1,22 @@
+info:
+  name: replyToComment
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://localhost:4500/api/community-blogs/6ad9b53fa04d499b4d6864c6/comments/6ad9d15aa9c2fce2da3e312a/reply
+  body:
+    type: json
+    data: |-
+      {
+        "text" : "Yes you are right"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

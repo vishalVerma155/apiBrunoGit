@@ -1,0 +1,16 @@
+info:
+  name: deleteBlog
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:4500/api/community-blogs/deleteBlog/6ad8aac383542ce2a2e48410
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

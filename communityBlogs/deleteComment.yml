@@ -1,0 +1,16 @@
+info:
+  name: deleteComment
+  type: http
+  seq: 13
+
+http:
+  method: DELETE
+  url: http://localhost:4500/api/community-blogs/6ad9b53fa04d499b4d6864c6/comments/6ad9d15aa9c2fce2da3e312a
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
