@@ -1,0 +1,30 @@
+info:
+  name: getBlogsAdmin
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: http://localhost:4500/api/community-blogs/getBlogsAdmin?approved=false
+  params:
+    - name: userId
+      value: ""
+      type: query
+      disabled: true
+    - name: approved
+      value: "false"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: ""
+        type: text
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

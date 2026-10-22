@@ -15,7 +15,6 @@ http:
       - name: description
         type: text
         value: edited description
-        disabled: true
   auth: inherit
 
 settings:
