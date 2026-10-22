@@ -1,0 +1,16 @@
+info:
+  name: getDealById
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/store/home/getDealOfTheWeekSection/686fa8d03c2f734c10154571
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

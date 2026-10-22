@@ -1,0 +1,37 @@
+info:
+  name: createCouponSettings
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/settings/addNewCouponSetting
+  body:
+    type: json
+    data: "{\r
+
+      \  \"couponType\": \"REFERRER\",\r
+
+      \  \"discountValue\": 10,\r
+
+      \  \"discountType\": \"PERCENT\",\r
+
+      \  \"usagePerUser\": 1,\r
+
+      \  \"usageLimit\": 1,\r
+
+      \  \"maxDiscountAmount\":200,\r
+
+      \   \"minOrderValue\":4000,\r
+
+      \   \"validDays\":15\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

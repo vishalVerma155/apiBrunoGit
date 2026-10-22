@@ -1,0 +1,55 @@
+info:
+  name: createMemberShipPayment
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:4500/cashFree/createMemberShipPayment
+  body:
+    type: json
+    data: "{\r
+
+      \    \"amount\": \"2999\",\r
+
+      \    \"name\": \"asdfg\",\r
+
+      \    \"email\": \"asd@gmail.com\",\r
+
+      \    \"phone\": \"9638527410\",\r
+
+      \    \"orderData\": {\r
+
+      \        \"memberShipId\":\"69ae7cab060d99968389ec87\",\r
+
+      \        \"memberShipType\": \"Premium Membership\",\r
+
+      \        \"price\": 2999,\r
+
+      \        \"giftedMembership\": false,\r
+
+      \        \"durationInDays\": 365,\r
+
+      \        \"features\": [\r
+
+      \            \"d\"\r
+
+      \        ],\r
+
+      \        \"mostSelling\": false,\r
+
+      \        \"newTag\": true,\r
+
+      \        \"mlmLevel\": 10\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

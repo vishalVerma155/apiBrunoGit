@@ -1,0 +1,43 @@
+info:
+  name: createRole
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/admin/createRole
+  body:
+    type: json
+    data: "{\r
+
+      \    \"role\": \"support_manager\",\r
+
+      \    \"permissions\": [\r
+
+      \            {\r
+
+      \                \"name\": \"Edit Campaign\", \r
+
+      \                \"path\": \"/vendor/editCampaign/:campaignId\"\r
+
+      \            },\r
+
+      \            {\r
+
+      \                \"name\": \"Get All Marketing Programs For Admin\",\r
+
+      \                \"path\": \"/vendor/getAllMarketingProgramsForAdmin\"\r
+
+      \             }\r
+
+      \    ]\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

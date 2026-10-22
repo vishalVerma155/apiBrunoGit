@@ -1,0 +1,26 @@
+info:
+  name: editBlog
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:4500/api/community-blogs/editBlog/6ad8aac383542ce2a2e48410
+  body:
+    type: multipart-form
+    data:
+      - name: heading
+        type: text
+        value: edited heading
+      - name: description
+        type: text
+        value: edited description
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

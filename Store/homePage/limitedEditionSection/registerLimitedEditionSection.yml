@@ -1,0 +1,23 @@
+info:
+  name: registerLimitedEditionSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/registerLimitedEditionProducts
+  body:
+    type: json
+    data: "{\r
+
+      \    \"products\" : [\"6867886e36b83497ec6c9e84\", \"686788a636b83497ec6c9e8a\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

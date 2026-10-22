@@ -1,0 +1,16 @@
+info:
+  name: deleteFAQ
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/courseSection/deleteFAQ/691d4b91c4716816d268da7c"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

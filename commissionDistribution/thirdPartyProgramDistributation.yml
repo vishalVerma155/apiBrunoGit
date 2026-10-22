@@ -1,0 +1,29 @@
+info:
+  name: thirdPartyProgramDistributation
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/commissionPartnerProgram
+  body:
+    type: json
+    data: "{\r
+
+      \    \"transactionThirdPartyId\" : \"6a5b25a8c263322a98edee5c\",\r
+
+      \    \"sellerId\" : \"AF2\",\r
+
+      \    \"programId\" : \"6a2a895c7b23e17db1be425d\",\r
+
+      \    \"thirdPartyType\" : \"cuelink\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

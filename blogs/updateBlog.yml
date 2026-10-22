@@ -1,0 +1,27 @@
+info:
+  name: updateBlog
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/blog/updateBlog/6a02e89f25e0504306c82397
+  body:
+    type: multipart-form
+    data:
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-04-23 113259.png
+      - name: mainImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-04-23 113259.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

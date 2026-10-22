@@ -1,0 +1,31 @@
+info:
+  name: updateRewardPointSetting
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/settings/updateRewardPointSetting/69e9fc41c533083747280a4e
+  body:
+    type: json
+    data: "{\r
+
+      \  \"points\": 100,\r
+
+      \  \"pointValue\": 10,\r
+
+      \  \"type\": \"SURVEY\",\r
+
+      \  \"validDays\": 30,\r
+
+      \  \"isDisabled\" : false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

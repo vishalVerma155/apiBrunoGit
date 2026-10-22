@@ -1,0 +1,29 @@
+info:
+  name: editFAQ
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/courseSection/editFAQ/691d4b91c4716816d268da7c"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"question\": \"anc\"\r
+
+      \    // \"answer\": \"test\",\r
+
+      \    // \"category\": \"691d409ca545a4cecc9f52c4\",\r
+
+      \    // \"course\": \"691d409ca545a4cecc9f52c4\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

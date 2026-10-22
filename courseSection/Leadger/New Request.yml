@@ -1,0 +1,27 @@
+info:
+  name: New Request
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/courseSection/Leadger"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"vendorId\":\"69215329e78a382720383309\",\r
+
+      \    // \"startDate\":\"2025-12-16T00:00:00.000Z\",\r
+
+      \    // \"endDate\":\"2025-12-18T00:00:00.000Z\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

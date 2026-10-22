@@ -1,0 +1,31 @@
+info:
+  name: createColorArray
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createColorsArray
+  body:
+    type: json
+    data: "{\"colors\" :[\r
+
+      \  \"#000000\", \"#FFFFFF\", \"#FF0000\", \"#008000\", \"#0000FF\", \"#FFFF00\", \"#00FFFF\", \"#FF00FF\", \"#808080\", \"#A52A2A\",\r
+
+      \  \"#8B0000\", \"#FFA07A\", \"#006400\", \"#90EE90\", \"#00008B\", \"#ADD8E6\", \"#FFD700\", \"#FFFFE0\", \"#A9A9A9\", \"#D3D3D3\",\r
+
+      \  \"#FFC0CB\", \"#D8BFD8\", \"#AEC6CF\", \"#77DD77\", \"#FDFD96\", \"#FFA500\", \"#00FF00\", \"#008080\", \"#4B0082\", \"#EE82EE\",\r
+
+      \  \"#F5F5DC\", \"#808000\", \"#800000\", \"#000080\", \"#D2691E\", \"#40E0D0\", \"#FF7F50\", \"#FA8072\", \"#FFD700\", \"#C0C0C0\"\r
+
+      ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

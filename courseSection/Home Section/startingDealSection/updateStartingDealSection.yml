@@ -1,0 +1,35 @@
+info:
+  name: updateStartingDealSection
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/home/updateStartingDealSection/692055f051542b9eb4b055c6
+  body:
+    type: multipart-form
+    data:
+      - name: startingDealSectionImage
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+        disabled: true
+      - name: title
+        type: text
+        value: up
+        disabled: true
+      - name: subTitle
+        type: text
+        value: up
+        disabled: true
+      - name: categoryId
+        type: text
+        value: 691da61c41436644d124742e
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

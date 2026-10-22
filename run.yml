@@ -1,0 +1,19 @@
+info:
+  name: run
+  type: http
+  seq: 42
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/LowerApi/admin/migrate-lowercase/run
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

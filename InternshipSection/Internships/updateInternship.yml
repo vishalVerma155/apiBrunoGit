@@ -1,0 +1,23 @@
+info:
+  name: updateInternship
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/internshipSection/updateInternship/69a94f1167e5eca926ebc2fc
+  body:
+    type: multipart-form
+    data:
+      - name: internshipImage
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/hrute5kymqoyslnttura.webp
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

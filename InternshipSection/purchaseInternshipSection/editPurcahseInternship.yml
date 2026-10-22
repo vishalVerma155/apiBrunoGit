@@ -1,0 +1,53 @@
+info:
+  name: editPurcahseInternship
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/internshipSection/editSoldInternship/6a7e9cedcc7ab4def30f72a0
+  body:
+    type: multipart-form
+    data:
+      - name: certificateHeading
+        type: text
+        value: dfxcgbhjkl
+      - name: certificateId
+        type: text
+        value: 122312wert
+      - name: certificate
+        type: file
+        value:
+          - /C:/Users/assis/OneDrive/Desktop/Docker CheatSheet ApnaCollege.pdf
+      - name: billPDF
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/InvoiceSimple-PDF-Template.pdf
+        disabled: true
+      - name: credentialSent
+        type: text
+        value: "true"
+        disabled: true
+      - name: id
+        type: text
+        value: bhjbhg
+        disabled: true
+      - name: password
+        type: text
+        value: kjnkjh
+        disabled: true
+      - name: panelLink
+        type: text
+        value: njbhjbb
+        disabled: true
+      - name: userStatus
+        type: text
+        value: internship_completed
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

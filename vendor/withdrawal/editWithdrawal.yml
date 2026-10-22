@@ -1,0 +1,29 @@
+info:
+  name: editWithdrawal
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/withdrawal/editWithdrawalRequest
+  body:
+    type: json
+    data: "{\r
+
+      \    \"withdrawalReqId\" : \"6a74211ffb8c450af8c7357f\",\r
+
+      \    \"status\" : \"paid\",\r
+
+      \      \"reason\":\"asdf\",\r
+
+      \    \"transtionId\" : \"dbusguyysdsdf2sdd3123c1hff\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

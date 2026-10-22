@@ -1,0 +1,25 @@
+info:
+  name: updateCoupon
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:4500/discountCoupon/updateCoupon/69537182cbdecabe06888194
+  body:
+    type: json
+    data: "{\r
+
+      \    \"validFrom\": \"2025-12-30\",\r
+
+      \  \"validTill\": \"2026-01-31\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

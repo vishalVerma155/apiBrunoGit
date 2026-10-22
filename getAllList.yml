@@ -1,0 +1,25 @@
+info:
+  name: getAllList
+  type: http
+  seq: 32
+
+http:
+  method: POST
+  url: http://localhost:4500/getAllList
+  body:
+    type: text
+    data: "{\r
+
+      \    \"startDate\": \"2025-12-01\",\r
+
+      \    \"endDate\": \"2026-02-01\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,16 @@
+info:
+  name: getCompanyLogo
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/store/getCompanyLogo/68720ed8833d83d839fe4a86
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

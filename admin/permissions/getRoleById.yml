@@ -1,0 +1,25 @@
+info:
+  name: getRoleById
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:4500/admin/getRole/698097252c32286799795549
+  body:
+    type: text
+    data: "{\r
+
+      \    // \"name\" :\"adminOne@earninghandle.com\",\r
+
+      \    \"path\" : \"innovize@@2025\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

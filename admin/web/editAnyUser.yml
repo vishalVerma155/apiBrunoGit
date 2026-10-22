@@ -1,0 +1,31 @@
+info:
+  name: editAnyUser
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/editAnyUser/68abef4e1b898f842c471863
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"vendorStatus\" : \"denied\"\r
+
+      \    \"password\" : \"2580\"\r
+
+      \    // \"isdisable\":false\r
+
+      \    // \"relationShipManager\" : \"693ff04a4410c2339881002b\"\r
+
+      \    // \"isSuperAffiliate\":true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

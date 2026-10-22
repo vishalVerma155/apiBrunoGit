@@ -1,0 +1,33 @@
+info:
+  name: updateVideoBanner
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateVideoBanner/6aabc91212bf56e4b0dbf151
+  body:
+    type: multipart-form
+    data:
+      - name: video
+        type: file
+        value:
+          - /C:/Users/assis/Downloads/ganpati ji video .mp4
+      - name: image
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/image-optimisation-scaled.jpg
+        disabled: true
+      - name: thumbnail
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/image-optimisation-scaled.jpg
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

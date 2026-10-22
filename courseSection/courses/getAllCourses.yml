@@ -1,0 +1,37 @@
+info:
+  name: getAllCourses
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/getAllCourses
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"city\" : \"rohtak\",\r
+
+      \    // \"status\" : \"\",\r
+
+      \    // \"vendorId\" : \"\",\r
+
+      \    // \"sortBy\" : \"validityHighToLow\",// priceLowHigh, priceHighLow, newToOld, oldToNew, validityLowToHigh, validityHighToLow   \r
+
+      \    // \"maxPrice\": 10000 // max price\r
+
+      \    // \"minPrice\": 4000 // min price,\r
+
+      \    \"page\": 1,\r
+
+      \    \"limit\": 30\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

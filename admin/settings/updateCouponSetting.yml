@@ -1,0 +1,33 @@
+info:
+  name: updateCouponSetting
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:4500/settings/updateCouponSetting/69d757854d1400e6b2732e06
+  body:
+    type: json
+    data: "{\r
+
+      \  \"couponType\": \"SURVAYyy\",\r
+
+      \  \"discountValue\": 1001,\r
+
+      \  \"discountType\": \"FLAT\",\r
+
+      \  \"usagePerUser\": 11,\r
+
+      \  \"usageLimit\": 11,\r
+
+      \  \"isDisabled\" : false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

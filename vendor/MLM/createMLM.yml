@@ -1,0 +1,47 @@
+info:
+  name: createMLM
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/MLM/createMLM/68ae949b8489898872ca5875
+  body:
+    type: json
+    data: |-
+      {
+          "totalCommission": 40,
+          "commissionType": "percentage",
+          "totalMLMLevel": 1,
+          "adminCommission": 30,
+          "commissions": [
+              {
+                  "level": 1,
+                  "commission": 10
+              }
+      //         {
+      //             "level": 2,
+      //             "commission": 2
+      //         }
+              // {
+              //     "level": 3,
+              //     "commission": 2
+              // },
+              // {
+              //     "level": 4,
+              //     "commission": 2
+              // },
+              // {
+              //     "level": 5,
+              //     "commission": 1
+              // }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

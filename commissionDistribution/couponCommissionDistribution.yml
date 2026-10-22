@@ -1,0 +1,27 @@
+info:
+  name: couponCommissionDistribution
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/couponCommissionDistributeAffiliate
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sellerId\" : \"68ce449fd4e0840f389f9102\",\r
+
+      \    \"couponId\" : \"68c2bb2d065148cde65c7093\",\r
+
+      \    \"purchasedCouponId\" : \"68c2bb2d065148cde65c7093\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

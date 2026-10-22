@@ -1,0 +1,23 @@
+info:
+  name: deleteProductFromLimitedSection
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/home/deleteLimitedEditionProducts/69203d07a65eaef6af9efae1
+  body:
+    type: json
+    data: "{\r
+
+      \    \"CoursesId\" :  \"691d95f841436644d1247182\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,31 @@
+info:
+  name: getVendorReferalCouponsForAdmin
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/vendorReffererCouponsForAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    \"startDate\": \"2026-03-01\",\r
+
+      \    \"endDate\": \"2026-05-01\",\r
+
+      \    \"ownerUserId\" : \"\",\r
+
+      \    \"status\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
+
+docs: 'StartFragment{    "success": true,    "data": \[        {            "statuses": {                "pending": {                    "totalAmount": 2000,                    "docs": \[                        {                            "_id": "69f47ad7e4e4949d60c88b04",                            "title": "Vendor Referal Reward",                            "description": "Reward for get onboard a vendor to EH",                            "couponType": "VENDOR_REFERRER",                            "validFor": "all",                            "ownerUserId": "69f4589ac9a5b8a30b207bf2",                            "usageLimit": 1,                            "usagePerUser": 1,                            "isActive": true,                            "releseDate": "2026-05-31T10:05:11.888Z",                            "couponAmount": 2000,                            "status": "pending",                            "createdAt": "2026-05-01T10:05:11.890Z",                            "updatedAt": "2026-05-01T10:05:11.890Z"                        }                    \]                }            },            "userId": "69f4589ac9a5b8a30b207bf2",            "firstName": "JAYANT",            "email": "jayantarora123a@gmail.com"        }    \]}EndFragment'

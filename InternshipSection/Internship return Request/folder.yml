@@ -1,0 +1,7 @@
+info:
+  name: Internship return Request
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit

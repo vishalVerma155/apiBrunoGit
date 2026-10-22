@@ -1,0 +1,23 @@
+info:
+  name: updateVideo
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateVideo/68c808436f5048174d5c44a9
+  body:
+    type: multipart-form
+    data:
+      - name: addVideo
+        type: file
+        value:
+          - postman-cloud:///1f092b2e-1d4d-40a0-bc6d-5d3a6dbbf8e6
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

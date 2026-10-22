@@ -1,0 +1,31 @@
+info:
+  name: matchOtp
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/matchOTP
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\" :\"assistantjunior@earninghandle.com\",\r
+
+      \    \"otp\" : \"565539\",\r
+
+      \    \"phoneNumber\":7357221115,\r
+
+      \    // \"email\" : \"vendorsolutioninnovize@gmail.com\",\r
+
+      \    \"type\" : \"login\" // if forget password use 'forget' if login use 'login'\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

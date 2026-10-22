@@ -1,0 +1,27 @@
+info:
+  name: registerAdmin
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/admin/registerAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    \"fullName\": \"AdminOne\",\r
+
+      \    \"email\" : \"adminOne@earninghandle.com\",\r
+
+      \    \"password\" : \"innovize@@2025\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

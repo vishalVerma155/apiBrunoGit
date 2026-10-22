@@ -1,0 +1,43 @@
+info:
+  name: getStoreCampaignById
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:4500/store/getStoreProductById/6a35177ea0c4afb2a3d712c9
+  body:
+    type: text
+    data: "{\r
+
+      \    // \"colour\" : [\"white\", \"purple\", \"black\"], // add clolors\r
+
+      \    // \"productCategory\" : [\"68285f750e829db58fb65ccf\", \"68285f7e0e829db58fb65cd2\"], // add categories \r
+
+      \    // \"maxPrice\": 1900 // max price\r
+
+      \    // \"minPrice\": 1001 // min price\r
+
+      \    // \"size\" : [\"L\", \"M\"], // add sizes and you can add size in number\r
+
+      \    // \"minRating\" : 3, // want min rating\r
+
+      \    // \"minDiscount\" : 11, // minimum discount\r
+
+      \    // \"onSale\" : \"true\", // want sale true or false\r
+
+      \    // \"gender\" : \"men\" // men, women, kids\r
+
+      \    // \"name\" : \"bagirath\",\r
+
+      \    // \"sortBy\" : \"priceHighLow\" // priceLowHigh, priceHighLow, newToOld, oldToNew\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

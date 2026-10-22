@@ -1,0 +1,27 @@
+info:
+  name: removeProductFromCart
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:4500/store/removeProductFromCart/68bbbe97f7f38be2a89f8c3f
+  body:
+    type: json
+    data: "{\r
+
+      \    \"color\" : null,\r
+
+      \    \"size\" : \"1pcS\",\r
+
+      \    \"quantity\" : 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,23 @@
+info:
+  name: updateLimitedEditionSection
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{intershipBaseUrl}}/home/updateLimitedEditionProducts/698c5431801f72a2d8f8504f"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Courses\" : [\"698b042ce731b2e690164488\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

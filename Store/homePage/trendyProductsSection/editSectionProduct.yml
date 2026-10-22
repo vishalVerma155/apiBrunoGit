@@ -1,0 +1,25 @@
+info:
+  name: editSectionProduct
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateTrendyProducts/686f9ffb381be92927013a07/686f9ffb381be92927013a08
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productId\" : \"686e0c676a679a05d5e5269a\",\r
+
+      \    \"type\" : \"bestSeller\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

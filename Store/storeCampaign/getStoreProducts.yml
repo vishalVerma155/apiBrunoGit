@@ -1,0 +1,36 @@
+info:
+  name: getStoreProducts
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/store/getStoreProducts
+  body:
+    type: json
+    data: |-
+      {
+          // "colour" : ["white", "purple", "black"], // add clolors
+          // "productCategory" : ["68285f750e829db58fb65ccf", "68285f7e0e829db58fb65cd2"], // add categories 
+          // "maxPrice": 1900 // max price
+          // "minPrice": 1001 // min price
+          // "size" : ["L", "M"], // add sizes and you can add size in number
+          // "minRating" : 3, // want min rating
+          // "minDiscount" : 11, // minimum discount
+          // "onSale" : "true", // want sale true or false
+          // "gender" : "men" // men, women, kids
+          // "name" : "bagirath",
+          // "sortBy" : "priceLowHigh" // priceLowHigh, priceHighLow, newToOld, oldToNew
+          // "userId" : "68bbb52bf7f38be2a89f8aa2"
+          // "page": 12,
+          "programId":"6aa7df5de9bd1c6ec90ddc77"
+      //     "sortBy":"newToOld"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

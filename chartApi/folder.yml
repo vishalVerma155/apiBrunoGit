@@ -1,0 +1,7 @@
+info:
+  name: chartApi
+  type: folder
+  seq: 17
+
+request:
+  auth: inherit

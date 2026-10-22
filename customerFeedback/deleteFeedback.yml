@@ -1,0 +1,16 @@
+info:
+  name: deleteFeedback
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:4500/customerFeedback/deleteFeedback/69c129b0ccee1cb35b0c1d34
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

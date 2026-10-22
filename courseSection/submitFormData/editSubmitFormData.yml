@@ -1,0 +1,33 @@
+info:
+  name: editSubmitFormData
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/editSubmitForm
+  body:
+    type: multipart-form
+    data:
+      - name: formDataId
+        type: text
+        value: 699ee30058736e56b75af369
+      - name: formData
+        type: text
+        value: '[{"ques":"Name","ans":"jayant"},{"ques":"Phone","ans":"9638527410"},{"ques":"Gender","ans":"Male"},{"ques":"Address","ans":"813a/18 ghanni pura, rohtak, haryana"}]'
+      - name: profileImage
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+      - name: signatureImage
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/download.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,25 @@
+info:
+  name: cancelOrderApi
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:4500/store/cancelOrderApi
+  body:
+    type: json
+    data: "{\r
+
+      \    \"vendorOrderId\" : \"69185278a55fd391c7cfa1b2\",\r
+
+      \    \"reason\" : \"User not picked.\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

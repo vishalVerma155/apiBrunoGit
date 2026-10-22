@@ -1,0 +1,35 @@
+info:
+  name: editAffiliate
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/affiliate/editAffiliate/
+  body:
+    type: multipart-form
+    data:
+      - name: userImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-02-27 165712.png
+        disabled: true
+      - name: soloSale
+        type: text
+        value: "true"
+        disabled: true
+      - name: clubName
+        type: text
+        value: rise
+        disabled: true
+      - name: removeImage
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

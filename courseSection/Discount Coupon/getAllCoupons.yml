@@ -1,0 +1,31 @@
+info:
+  name: getAllCoupons
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/getAllCoupons
+  body:
+    type: json
+    data: "\r
+
+      \    {\r
+
+      \r
+
+      \        // \"couponType\": \"USER_SHARED\" // \"PLATFORM\" or \"USER_SHARED\"\r
+
+      \        \"ownerUserId\": \"68b020eb08c043b1e4e5caf2\" \r
+
+      \r
+
+      \    }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

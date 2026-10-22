@@ -1,0 +1,7 @@
+info:
+  name: blogs
+  type: folder
+  seq: 12
+
+request:
+  auth: inherit

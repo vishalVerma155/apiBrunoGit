@@ -1,0 +1,7 @@
+info:
+  name: InternshipSection
+  type: folder
+  seq: 20
+
+request:
+  auth: inherit

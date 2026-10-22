@@ -1,0 +1,7 @@
+info:
+  name: marketing tools
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

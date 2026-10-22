@@ -1,0 +1,31 @@
+info:
+  name: createNotification
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/notification/createNotification
+  body:
+    type: json
+    data: "{\r
+
+      \    \"recipient\" : \"6a61fb1e0cec243d6a47cf24\",\r
+
+      \    \"heading\" : \"Refund approved 3\",\r
+
+      \    \"message\" : \"hi Bakul\",\r
+
+      \    \"receiverRole\" : \"affiliate\",\r
+
+      \    \"appRoute\":\"/commission\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

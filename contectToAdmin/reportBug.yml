@@ -1,0 +1,32 @@
+info:
+  name: reportBug
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/contectAdmin/reportBug
+  body:
+    type: multipart-form
+    data:
+      - name: subject
+        type: text
+        value: hi i m jayant
+      - name: body
+        type: text
+        value: hi hi hi
+      - name: attachment
+        type: file
+        value:
+          - /D:/PLUM/shopping.webp
+      - name: phoneBug
+        type: text
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

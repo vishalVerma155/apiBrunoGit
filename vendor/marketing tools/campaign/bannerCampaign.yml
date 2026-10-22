@@ -1,0 +1,60 @@
+info:
+  name: bannerCampaign
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/vendor/createCampaign
+  body:
+    type: multipart-form
+    data:
+      - name: toolType
+        type: text
+        value: saleIntegration
+      - name: toolIntegrationPlugin
+        type: text
+        value: xyz
+      - name: toolPeriod
+        type: text
+        value: always
+      - name: name
+        type: text
+        value: banner campaiogn test 1
+      - name: campaignTargetLink
+        type: text
+        value: https://www.amazon.com
+      - name: productPrice
+        type: text
+        value: "4000"
+      - name: linkTitle
+        type: text
+        value: testCampaign20
+      - name: vendorComment
+        type: text
+        value: great
+      - name: allowForAffiliate
+        type: text
+        value: all
+      - name: program
+        type: text
+        value: 681b2551f638dfe163ea28cb
+      - name: campaignImage
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+      - name: campaignType
+        type: text
+        value: bannerCampaign
+      - name: bannerImage
+        type: file
+        value:
+          - postman-cloud:///1f00aeb4-fb68-4780-8c88-fa2933432846
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

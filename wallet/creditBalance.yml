@@ -1,0 +1,37 @@
+info:
+  name: creditBalance
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/creditWallet
+  body:
+    type: json
+    data: "{\r
+
+      \  \"transactionId\": \"txn_1234563123338125\",\r
+
+      //   \"userId\": \"6a61fa890cec243d6a47c60d\",\r
+
+      \  \"amount\": 50,\r
+
+      \  \"status\": \"paid\",\r
+
+      \  \"idempotencyKey\": \"idem_234567895\",\r
+
+      \  \"type\": \"adjustment\",\r
+
+      \  \"actor\": \"system\",\r
+
+      \  \"transactionType\" : \"CREDIT\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

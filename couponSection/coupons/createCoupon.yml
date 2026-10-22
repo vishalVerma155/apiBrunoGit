@@ -1,0 +1,53 @@
+info:
+  name: createCoupon
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/couponSection/createCoupon
+  body:
+    type: multipart-form
+    data:
+      - name: couponImage
+        type: file
+        value:
+          - postman-cloud:///1f07c13b-b956-4b80-8e0b-62b931483d9f
+      - name: program
+        type: text
+        value: 68c2b75b180ed3065925cc1b
+      - name: vendorId
+        type: text
+        value: ""
+      - name: title
+        type: text
+        value: Test Coupon 2
+      - name: description
+        type: text
+        value: test coupon 2
+      - name: price
+        type: text
+        value: "600"
+      - name: value
+        type: text
+        value: "800"
+      - name: validityDays
+        type: text
+        value: "7"
+      - name: city
+        type: text
+        value: rohtak
+      - name: state
+        type: text
+        value: haryana
+      - name: country
+        type: text
+        value: india
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

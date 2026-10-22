@@ -1,0 +1,27 @@
+info:
+  name: getAllDepositReceiptForAdmin
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/deposit/getAllDepositReceiptAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    \"paymentMethod\" : \"upi\",\r
+
+      \    \"paymentStatus\" : \"\",\r
+
+      \    \"transactionId\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

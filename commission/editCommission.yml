@@ -1,0 +1,23 @@
+info:
+  name: editCommission
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/commission/editCommission/687a2c1c50be781ca2fd1972
+  body:
+    type: json
+    data: "{\r
+
+      \    \"paymentStatus\" : \"paid\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

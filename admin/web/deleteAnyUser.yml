@@ -1,0 +1,16 @@
+info:
+  name: deleteAnyUser
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/deleteAnyUser/68fb66b5c50d8722028c383a
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

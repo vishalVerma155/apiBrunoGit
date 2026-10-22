@@ -1,0 +1,23 @@
+info:
+  name: New Request_2
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: https://www.cuelinks.com/api/v2/all_campaigns.json?search_term=Mama Earth
+  headers:
+    - name: Authorization
+      value: Token token=D12CBJE6Jp7eeiz066AIHnmnRnXs3v6iahZyLf473Gg
+  params:
+    - name: search_term
+      value: Mama Earth
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

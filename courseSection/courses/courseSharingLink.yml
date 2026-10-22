@@ -1,0 +1,23 @@
+info:
+  name: courseSharingLink
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/courseSharingLink
+  body:
+    type: json
+    data: "{\r
+
+      \    \"courseId\" : \"69aa533b69910b830b050966\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

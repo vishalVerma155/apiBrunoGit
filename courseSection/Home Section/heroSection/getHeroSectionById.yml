@@ -1,0 +1,29 @@
+info:
+  name: getHeroSectionById
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:4500/courseSection/home/getHeroSection/692035a2dd927779e6150761
+  body:
+    type: multipart-form
+    data:
+      - name: heroSectionImage
+        type: file
+        value:
+          - postman-cloud:///1f03094b-53aa-4d60-a6b1-d61513e7fd49
+      - name: title
+        type: text
+        value: title 2
+      - name: subTitle
+        type: text
+        value: subTitle 2
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

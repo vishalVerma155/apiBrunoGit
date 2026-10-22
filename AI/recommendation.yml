@@ -1,0 +1,27 @@
+info:
+  name: recommendation
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/AI/recommendation
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\":\"69325c85edb320b083420ad8\"\r
+
+      \    // \"courseId\":\"693927953aa1893556cbdaf4\",\r
+
+      \    // \"eventType\":\"purchase\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

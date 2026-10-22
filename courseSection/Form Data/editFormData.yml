@@ -1,0 +1,73 @@
+info:
+  name: editFormData
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/courseSection/editFormData/692420e711a589f929765cf1"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"vendorId\": \"\", // if want to change vendor by admin\r
+
+      \r
+
+      \r
+
+      \    //----------- details array  if want to add----------  \r
+
+      \    \"details\": [\r
+
+      \        {\r
+
+      \            \"question\": \"How To deal with __ ?\",\r
+
+      \            \"answerType\": \"select\", //\"text\", \"number\", \"select\"\r
+
+      \            \"options\": [\r
+
+      \                \"fgh\",\r
+
+      \                \"dfghj\",\r
+
+      \                \"fghjk\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    // ---------------------details info if want to edit --------------------\r
+
+      \    //  \"detailsId\":\"692420e711a589f929765cf2\",\r
+
+      \    // \"question\": \"How To deal with __ ?\",\r
+
+      \    // \"answerType\": \"select\", //\"text\", \"number\", \"select\"\r
+
+      \    // \"options\": [\r
+
+      \    //     \"fgh\",\r
+
+      \    //     \"dfghj\",\r
+
+      \    //     \"fghjk\"\r
+
+      \    // ],\r
+
+      \    \"isProfile\": true,\r
+
+      \    \"isSignature\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

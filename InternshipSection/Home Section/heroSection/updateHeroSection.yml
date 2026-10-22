@@ -1,0 +1,40 @@
+info:
+  name: updateHeroSection
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{intershipBaseUrl}}/home/updateHeroSection/698c58623cf8adb6cb233a96"
+  body:
+    type: multipart-form
+    data:
+      - name: textColor
+        type: text
+        value: "#000000"
+        disabled: true
+      - name: backgroundColor
+        type: text
+        value: "#ffffff"
+        disabled: true
+      - name: vendorId
+        type: text
+        value: 694a7c5cd00521d9bf1a4a5c
+        disabled: true
+      - name: heroSectionImage
+        type: file
+        value:
+          - /C:/Users/HP/Downloads/u6f0h5jsope5ku1mg9zz.webp
+        disabled: true
+      - name: image2
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

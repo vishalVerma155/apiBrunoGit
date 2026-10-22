@@ -1,0 +1,16 @@
+info:
+  name: deleteCompanyLogo
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:4500/store/deleteCompanyLogo/697da8a69bdc68a88ae32a66
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

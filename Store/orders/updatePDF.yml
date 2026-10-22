@@ -1,0 +1,23 @@
+info:
+  name: updatePDF
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/store/updatePdf
+  body:
+    type: multipart-form
+    data:
+      - name: billPdf
+        type: file
+        value:
+          - postman-cloud:///1f08728d-f208-4f60-849c-96fb07b511ae
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

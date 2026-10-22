@@ -1,0 +1,23 @@
+info:
+  name: New Request
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4600/upi/upiVerify
+  body:
+    type: json
+    data: "{\r
+
+      \    \"upi_id\":\"payalmaggu@okaxis\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

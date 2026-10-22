@@ -1,0 +1,49 @@
+info:
+  name: createVideoBanner
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/createVideoBanner
+  body:
+    type: multipart-form
+    data:
+      - name: type
+        type: text
+        value: store
+      - name: heading
+        type: text
+        value: Diwali video
+      - name: title
+        type: text
+        value: Diwali video
+      - name: description
+        type: text
+        value: dhvsueu
+      - name: thumbnail_title
+        type: text
+        value: diwali
+      - name: thumbnail_subtitle
+        type: text
+        value: ciueincj
+      - name: video
+        type: file
+        value:
+          - /C:/Users/assis/Downloads/download.mp4
+      - name: image
+        type: file
+        value:
+          - postman-cloud:///1f15e601-c783-4f70-a4fe-713eb94e0dbc
+      - name: thumbnail
+        type: file
+        value:
+          - postman-cloud:///1f15e601-c783-4f70-a4fe-713eb94e0dbc
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

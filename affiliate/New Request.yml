@@ -1,0 +1,23 @@
+info:
+  name: New Request
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/unsubscribe
+  body:
+    type: json
+    data: "{\r
+
+      \    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlbmRvcnNvbHV0aW9uaW5ub3ZpemVAZ21haWwuY29tIiwiYWN0aW9uIjoidW5zdWJzY3JpYmUiLCJpYXQiOjE3NzUyMDA1MjcsImV4cCI6MTc3NTgwNTMyN30.-b89DZ5eyAoQR6_6wUlLO-BLafg4hUh73_pRF56kskM\"\r
+
+      }   "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,23 @@
+info:
+  name: updateFeaturedCategory
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateFeaturedCategory/6aad2464ccc1eea2a9f48bd5
+  body:
+    type: json
+    data: "{\r
+
+      \    \"categoryId\":\"68be97498bb9294fe8f2ced7\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,39 @@
+info:
+  name: editCategory
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/editCategory/6a97ef693ef1acf552a5d9b8
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: Full Stack Developer
+        disabled: true
+      - name: features
+        type: text
+        value: FGHJK
+        disabled: true
+      - name: features
+        type: text
+        value: bjnkl
+        disabled: true
+      - name: image
+        type: file
+        value:
+          - /D:/Data/email template _ Courses Images/Programming Cards.png
+        disabled: true
+      - name: removeParent
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

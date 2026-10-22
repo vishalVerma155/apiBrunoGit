@@ -1,0 +1,35 @@
+info:
+  name: createCategory
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/courseSection/createCategory"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: TEST3
+      - name: features
+        type: text
+        value: TEST!
+      - name: features
+        type: text
+        value: TEST@
+      - name: image
+        type: file
+        value:
+          - /D:/PANOS-0092509230025484_Side.png
+      - name: parent
+        type: text
+        value: 6a97ef5c3ef1acf552a5d85e
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

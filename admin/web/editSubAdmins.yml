@@ -1,0 +1,25 @@
+info:
+  name: editSubAdmins
+  type: http
+  seq: 14
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/editSubAdmin/6a8811542a463151a5e8fa9c
+  body:
+    type: json
+    data: "{\r
+
+      \"defaultVendorManager\": true\r
+
+      //   \"defaultAffiliateManager\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

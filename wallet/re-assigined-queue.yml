@@ -1,0 +1,33 @@
+info:
+  name: re-assigined-queue
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/re-assigned-job/6a7dbb8ad156ca6de946fd7f
+  body:
+    type: json
+    data: "{\r
+
+      \    \"note\": \"\",\r
+
+      \    \"overrides\": {\r
+
+      \        // \"giverId\": \"68a404def358202d178e6b6a\",\r
+
+      \        // \"getterId\": \"6a61fa890cec243d6a47c60d\",\r
+
+      \        \"transactionId\" : \"txn_123456312333812112\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

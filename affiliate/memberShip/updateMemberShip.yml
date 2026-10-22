@@ -1,0 +1,31 @@
+info:
+  name: updateMemberShip
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/affiliate/updateMemberShip/69e88df3d44dbf5d8bfddc9f
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"giftedMembership\" : false\r
+
+      \    // \"durationInDays\":31\r
+
+      \    // \"mlmLevel\":5\r
+
+      \    // \"isDeleted\":true\r
+
+      \    \"isDefault\":true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

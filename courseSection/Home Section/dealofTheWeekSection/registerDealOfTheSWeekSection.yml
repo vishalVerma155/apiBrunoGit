@@ -1,0 +1,29 @@
+info:
+  name: registerDealOfTheSWeekSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/home/registerDealOfTheWeekSection
+  body:
+    type: multipart-form
+    data:
+      - name: dealOfTheWeekSectionImage
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+      - name: courseId
+        type: text
+        value: 6921762ee298f7e5557ff3ad
+      - name: date
+        type: text
+        value: 2026-01-23
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

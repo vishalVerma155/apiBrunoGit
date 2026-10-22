@@ -1,0 +1,35 @@
+info:
+  name: createAddress
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createAddress
+  body:
+    type: json
+    data: "{\r
+
+      \    \"firstName\": \"jayant\",\r
+
+      \    \"streetAddress\" : \"813 Ghanni Pura\",\r
+
+      \    \"city\" : \"Rohtak\",\r
+
+      \    \"state\" : \"Haryana\",\r
+
+      \    \"country\" : \"India\",\r
+
+      \    \"pincode\" : \"124001\",\r
+
+      \    \"phone\" : \"1234567890\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

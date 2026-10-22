@@ -1,0 +1,16 @@
+info:
+  name: deleteAffiliateAccountRequest
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/deleteAffiliateAccountRequest
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

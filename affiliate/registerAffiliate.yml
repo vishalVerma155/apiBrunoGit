@@ -1,0 +1,40 @@
+info:
+  name: registerAffiliate
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/registerAffiliate
+  body:
+    type: json
+    data: "{\r
+
+      \    \"firstName\" : \"kc\",\r
+
+      \    \"email\" : \"demoJa04gfhjk\",\r
+
+      \    \"phoneNumber\" : \"9993301114\",\r
+
+      \    \"country\" : \"india\",\r
+
+      \    \"password\" : \"User@123\"\r
+
+      \    ,\"aff_id\":\"AF56\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: before-request
+      code: "const password = \"9\".repeat(512 * 1024); // 512 KB\r
+
+        bru.setVar(\"password\", password);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

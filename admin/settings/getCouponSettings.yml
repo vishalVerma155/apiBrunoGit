@@ -1,0 +1,49 @@
+info:
+  name: getCouponSettings
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:4500/settings/getCouponSettings
+  body:
+    type: text
+    data: "{\r
+
+      \  \"full_name\": \"Rahul Sharma\",\r
+
+      \  \"phone\": \"9876543210\",\r
+
+      \  \"email\": \"rahul.sharma@gmail.com\",\r
+
+      \  \"age_group\": \"18-25\",\r
+
+      \  \"city\": \"Delhi\",\r
+
+      \  \"state\": \"Delhi\",\r
+
+      \  \"user_type\": \"Freelancer\",\r
+
+      \  \"heard_from\": \"Instagram\",\r
+
+      \  \"time_commitment\": \"4-6 hours/day\",\r
+
+      \  \"expected_earning\": \"50000-80000\",\r
+
+      \  \"experience\": \"2 years\",\r
+
+      \  \"platforms\": \"Upwork, Fiverr\",\r
+
+      \  \"skills\": \"Video Editing, Graphic Design\",\r
+
+      \  \"motivation\": \"I want to earn extra income while working from home and grow my freelancing career.\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,26 @@
+info:
+  name: createVideo
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/createVideo
+  body:
+    type: multipart-form
+    data:
+      - name: addVideo
+        type: file
+        value:
+          - postman-cloud:///1f092b2e-1d4d-40a0-bc6d-5d3a6dbbf8e6
+      - name: productId
+        type: text
+        value: 68bbbb89f7f38be2a89f8baa
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

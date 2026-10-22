@@ -1,0 +1,29 @@
+info:
+  name: getAllCoupons
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/couponSection/getAllCoupons
+  body:
+    type: json
+    data: "{\r
+
+      \    \"city\" : \"rohtak\",\r
+
+      \    \"status\" : \"\",\r
+
+      \    \"vendorId\" : \"\",\r
+
+      \    \"sortBy\" : \"validityHighToLow\" // priceLowHigh, priceHighLow, newToOld, oldToNew, validityLowToHigh, validityHighToLow   \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

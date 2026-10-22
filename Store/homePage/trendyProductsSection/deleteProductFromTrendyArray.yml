@@ -1,0 +1,25 @@
+info:
+  name: deleteProductFromTrendyArray
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/deleteTrendyProducts/686f9ffb381be92927013a07/686f9ffb381be92927013a08
+  body:
+    type: text
+    data: "{\r
+
+      \    \"productId\" : \"686e0c676a679a05d5e5269a\",\r
+
+      \    \"type\" : \"bestSeller\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

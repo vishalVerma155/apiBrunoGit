@@ -1,0 +1,23 @@
+info:
+  name: deleteProductFromLimitedSection
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/deleteLimitedEditionProducts/68bbcc91f7f38be2a89f8e8e
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productId\" :  \"68bbbb89f7f38be2a89f8baa\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

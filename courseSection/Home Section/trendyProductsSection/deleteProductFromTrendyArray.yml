@@ -1,0 +1,25 @@
+info:
+  name: deleteProductFromTrendyArray
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/home/deleteTrendyProducts/69204a22fc4775575ad06c2d/69204a22fc4775575ad06c2e
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"courseId\" : \"691ec60d983e99ca04b4e76c\"\r
+
+      \    // \"type\" : \"bestSeller\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

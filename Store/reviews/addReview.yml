@@ -1,0 +1,27 @@
+info:
+  name: addReview
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createReview
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productId\" : \"68777ea48669f8d9ec757df7\",\r
+
+      \    \"rating\" : 5,\r
+
+      \    \"comment\" : \"This is very good 2\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

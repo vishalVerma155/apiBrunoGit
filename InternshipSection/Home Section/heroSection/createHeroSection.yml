@@ -1,0 +1,37 @@
+info:
+  name: createHeroSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{intershipBaseUrl}}/home/registerHeroSection"
+  body:
+    type: multipart-form
+    data:
+      - name: heroSectionImage
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/ChatGPT Image Jul 17, 2026, 10_54_20 AM.png
+      - name: textColor
+        type: text
+        value: "#000000"
+      - name: backgroundColor
+        type: text
+        value: "#FCF5EE"
+      - name: vendorId
+        type: text
+        value: 698aef17212117805f1b18a7
+        disabled: true
+      - name: image2
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/ChatGPT Image Jul 17, 2026, 09_40_55 AM.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

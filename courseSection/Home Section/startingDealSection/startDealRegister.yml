@@ -1,0 +1,37 @@
+info:
+  name: startDealRegister
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/home/registerStartingDealSection
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: startingDealSectionImage
+        type: file
+        value:
+          - /C:/Users/HP/Downloads/rpbph63u5bxkur0igpvg.webp
+      - name: title
+        type: text
+        value: tt
+      - name: subTitle
+        type: text
+        value: tt
+      - name: categoryId
+        type: text
+        value: 68285f6c0e829db58fb65ccc
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

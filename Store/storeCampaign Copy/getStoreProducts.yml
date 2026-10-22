@@ -1,0 +1,53 @@
+info:
+  name: getStoreProducts
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://api.earninghandle.co.in/store/getStoreProducts
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"colour\" : [\"white\", \"purple\", \"black\"], // add clolors\r
+
+      \    \"productCategory\" : [\"68bfba88a7b459d3d17efb83\"] // add categories \r
+
+      \    // \"maxPrice\": 1900 // max price\r
+
+      \    // \"minPrice\": 1001 // min price\r
+
+      \    // \"size\" : [\"L\", \"M\"], // add sizes and you can add size in number\r
+
+      \    // \"minRating\" : 3, // want min rating\r
+
+      \    // \"minDiscount\" : 11, // minimum discount\r
+
+      \    // \"onSale\" : \"true\", // want sale true or false\r
+
+      \    // \"gender\" : \"men\" // men, women, kids\r
+
+      \    // \"name\" : \"bagirath\",\r
+
+      \    // \"sortBy\" : \"priceLowHigh\" // priceLowHigh, priceHighLow, newToOld, oldToNew\r
+
+      \    // \"userId\" : \"68bbb52bf7f38be2a89f8aa2\"\r
+
+      \    // \"page\": 4,\r
+
+      \    // \"sortBy\":\"newToOld\"\r
+
+      \r
+
+      \    // \"programId\":\"68f22398e666aa644c0600de\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

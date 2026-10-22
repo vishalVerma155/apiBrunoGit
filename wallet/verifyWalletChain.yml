@@ -1,0 +1,23 @@
+info:
+  name: verifyWalletChain
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/verifyWalletChain
+  body:
+    type: json
+    data: "{\r
+
+      \  \"userId\": \"68a404def358202d178e6b6a\" \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

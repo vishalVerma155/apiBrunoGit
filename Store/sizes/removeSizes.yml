@@ -1,0 +1,23 @@
+info:
+  name: removeSizes
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/removeSizes
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sizes\" : [\"165320\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

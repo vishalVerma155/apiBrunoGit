@@ -1,0 +1,19 @@
+info:
+  name: updateMembershipModel
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/membership/updateMembershipModel/6808c0203615a297ad82e257
+  body:
+    type: json
+    data: "{\r\n\"price\" : \"0\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

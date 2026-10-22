@@ -1,0 +1,29 @@
+info:
+  name: updateDealSection
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updatedealOfTheWeekSection/686fa8d03c2f734c10154571
+  body:
+    type: multipart-form
+    data:
+      - name: dealOfTheWeekSectionImage
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+      - name: productId
+        type: text
+        value: 686dfbae067b6122eadeecea
+      - name: date
+        type: text
+        value: 2025-07-13
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,23 @@
+info:
+  name: multiSharingCourse
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/courseSection/multiSharingCourse
+  body:
+    type: json
+    data: "{\r
+
+      \    \"courseIds\" : [\"69a91a9a67e5eca926ebb586\", \"69a91cb167e5eca926ebb653\", \"69a920bb67e5eca926ebb728\", \"69a9251467e5eca926ebb903\"]\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

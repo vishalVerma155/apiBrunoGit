@@ -1,0 +1,27 @@
+info:
+  name: getAllInternshipsByVendor
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:4500/internshipSection/getAllInternshipsByVendor
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"status\" : \"\",\r
+
+      \    // \"sortBy\" : \"validityHighToLow\" // priceLowHigh, priceHighLow, newToOld, oldToNew, validityLowToHigh, validityHighToLow   \r
+
+      \        // \"page\":1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

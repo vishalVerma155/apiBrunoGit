@@ -1,0 +1,51 @@
+info:
+  name: createMemberShip
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/createMemberShip
+  body:
+    type: json
+    data: "\r
+
+      {\r
+
+      \  \"memberShipType\": \"Basic Membership\",\r
+
+      \  \"price\": 1,\r
+
+      \  \"giftedMembership\": false,\r
+
+      \  \"durationInDays\": 3000,\r
+
+      \  \"features\": [\r
+
+      \    \"All Basic membership features\",\r
+
+      \    \"Access to more affiliate campaigns\",\r
+
+      \    \"Better earning opportunities through MLM levels\",\r
+
+      \    \"Performance tracking and insights\"\r
+
+      \  ],\r
+
+      \  \"mostSelling\": false,\r
+
+      \  \"newTag\": false,\r
+
+      \  \"mlmLevel\": 10,\r
+
+      \  \"isDefault\":true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

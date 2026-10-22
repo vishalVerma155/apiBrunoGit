@@ -1,0 +1,23 @@
+info:
+  name: deleteInternship
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:4500/internshipSection/deleteInternship/698af9b51b856c35c7f7d5b8
+  body:
+    type: json
+    data: "{\r
+
+      \"title\" : \"test coupon 1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

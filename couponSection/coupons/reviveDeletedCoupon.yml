@@ -1,0 +1,19 @@
+info:
+  name: reviveDeletedCoupon
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/couponSection/reviveDeleteCoupon/68c2bb2d065148cde65c7093
+  body:
+    type: text
+    data: "{\r\n\"isDeleted\" : false\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

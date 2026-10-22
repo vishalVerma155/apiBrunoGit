@@ -1,0 +1,23 @@
+info:
+  name: remmoveSizesIncategory
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/removeSizesIncategory/68b571ae81eaffe1d5130140
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sizes\" : [\"xl\", \"m\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

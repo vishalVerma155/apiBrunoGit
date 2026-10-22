@@ -1,0 +1,23 @@
+info:
+  name: linkGenerator
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: http://localhost:4500/api/partner-programs/linkGenerator
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productURL\":\"https://plumgoodness.com/products/thinkderma-2-niacinamide-rice-water-clear-moisture-gel-cream-all-day-non-greasy-moisturizer-fades-blemishes-brightens-skin-3-matmarine-for-oil-control-lightweight-non-sticky-100-vegan\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

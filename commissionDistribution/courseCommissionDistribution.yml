@@ -1,0 +1,29 @@
+info:
+  name: courseCommissionDistribution
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/courseCommissionDistributeAffiliate
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sellerId\" : \"6a61fa890cec243d6a47c60d\",\r
+
+      \    \"courseId\" : \"69b8ff7c4687363a59932bb9\",\r
+
+      \    \"purchasedInternshipId\" : \"6a746f60872acbff4f843ff8\",\r
+
+      \    \"type\" : \"internship\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

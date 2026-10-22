@@ -1,0 +1,27 @@
+info:
+  name: commissionDistributionAffiliate
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/commissionDistributeAffiliate
+  body:
+    type: json
+    data: "{\r
+
+      \    \"campaignId\" : \"690a32f58911f69d0279d513\",\r
+
+      \    \"sellerId\" : \"6901efcddfe171e8672b53ac\",\r
+
+      \    \"orderId\" : \"6a7c5fd432842233ecdef3f2\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

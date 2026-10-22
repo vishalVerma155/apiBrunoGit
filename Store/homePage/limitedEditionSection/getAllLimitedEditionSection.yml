@@ -1,0 +1,23 @@
+info:
+  name: getAllLimitedEditionSection
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/store/home/getAllLimitedEditionProducts
+  body:
+    type: text
+    data: "{\r
+
+      \    \"products\" : [\"6867886e36b83497ec6c9e84\", \"686788a636b83497ec6c9e8a\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

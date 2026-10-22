@@ -1,0 +1,27 @@
+info:
+  name: editReplaceRequest
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/store/editReplaceRequestVendor/68d241f21cb3ac263cf6b16d
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\" : \"replacementReceivedByVendor\"  //approvedReplacement //deniedReplacement //replaceOrderPickedUp //replacementReceivedByVendor //replacementShipped //replacementDelivered\r
+
+      \    // \"deliveryTrackingNumber\" : \"1234567890\",\r
+
+      \    // \"transportName\" : \"abc transport\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

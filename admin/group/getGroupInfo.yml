@@ -1,0 +1,23 @@
+info:
+  name: getGroupInfo
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/admin/group/getGroupInfo
+  body:
+    type: json
+    data: "{\r
+
+      \    \"groupName\" : \"prime\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

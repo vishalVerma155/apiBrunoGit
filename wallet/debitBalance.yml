@@ -1,0 +1,35 @@
+info:
+  name: debitBalance
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/debitWallet
+  body:
+    type: json
+    data: "{\r
+
+      \  \"transactionId\": \"txn_12345634511\",\r
+
+      //   \"userId\": \"67bebb666875b5a46440a659\",\r
+
+      \  \"amount\": 50,\r
+
+      \  \"status\": \"paid\",\r
+
+      \  \"idempotencyKey\": \"idem_98765432113\",\r
+
+      \  \"type\": \"returnOrderPayment\",\r
+
+      \  \"actor\": \"system\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

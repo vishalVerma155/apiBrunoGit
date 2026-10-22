@@ -1,0 +1,27 @@
+info:
+  name: refundProcessingApi
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/store/refundProcessingAdmin/68d22fa5a2d15a4673cfa215
+  body:
+    type: json
+    data: "{\r
+
+      \  \"refundStatus\": \"refundProcessing\" //\"refundProcessing\", \"refundCompleted\"\r
+
+      //   \"refundDate\" : \"2025-08-14\",\r
+
+      //   \"refundTranstionNumber\" : \"txn123456789\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

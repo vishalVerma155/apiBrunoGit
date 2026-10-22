@@ -1,0 +1,29 @@
+info:
+  name: getAllOrderForAdmin
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/store/getAllOrdersForAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"startDate\" : \"2025-07-23\",\r
+
+      \    // \"endDate\" : \"2025-07-23\",\r
+
+      \    // \"paymentMethod\" : \"\",\r
+
+      \    // \"orderId\" : \"f87f5c81-18e5-45f6-aa62-0689404836e9\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

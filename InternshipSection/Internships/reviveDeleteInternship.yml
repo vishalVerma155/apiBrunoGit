@@ -1,0 +1,19 @@
+info:
+  name: reviveDeleteInternship
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/internshipSection/reviveDeleteInternship/698af9b51b856c35c7f7d5b8
+  body:
+    type: json
+    data: "{\r\n\"isDeleted\" : false\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,54 @@
+info:
+  name: New Request_6
+  type: http
+  seq: 36
+
+http:
+  method: GET
+  url: https://www.cuelinks.com/api/v2/links.json?url=https://www.sugarcosmetics.com&shorten=true&subid=AF1186&subid2=sugar_Cosmatics
+  headers:
+    - name: token
+      value: D12CBJE6Jp7eeiz066AIHnmnRnXs3v6iahZyLf473Gg
+  params:
+    - name: channel_id
+      value: ""
+      type: query
+      disabled: true
+    - name: subid3
+      value: facebook
+      type: query
+      disabled: true
+    - name: subid4
+      value: campaign_data
+      type: query
+      disabled: true
+    - name: subid5
+      value: any_data
+      type: query
+      disabled: true
+    - name: url
+      value: https://www.sugarcosmetics.com
+      type: query
+    - name: channel_id
+      value: ""
+      type: query
+      disabled: true
+    - name: shorten
+      value: "true"
+      type: query
+    - name: subid
+      value: AF1186
+      type: query
+    - name: subid2
+      value: sugar_Cosmatics
+      type: query
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

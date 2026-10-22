@@ -1,0 +1,31 @@
+info:
+  name: depositAmountWallet
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/deposit/createReceipt
+  body:
+    type: json
+    data: "{\r
+
+      \    \"amountDeposited\" : 200,\r
+
+      \    \"paymentMethod\" : \"upi\",\r
+
+      \    \"paymentStatus\" : \"paid\",\r
+
+      \    \"upiId\" : \"67fe02047a9d3a71ebb5e594\",\r
+
+      \    \"transactionId\" : \"xbxbgdhh5412121sw\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

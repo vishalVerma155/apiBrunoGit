@@ -1,0 +1,35 @@
+info:
+  name: getReturnRequestUser
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/store/getReturnRequestUser
+  body:
+    type: multipart-form
+    data:
+      - name: images
+        type: file
+        value:
+          - /C:/Users/HP/OneDrive/Desktop/painting-mountain-lake-with-mountain-background_188544-9126.avif
+      - name: orderProductId
+        type: text
+        value: 689b060cdc42725e97f64431
+      - name: requestType
+        type: text
+        value: return
+      - name: reason
+        type: text
+        value: xyz
+      - name: returnQuantity
+        type: text
+        value: "1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

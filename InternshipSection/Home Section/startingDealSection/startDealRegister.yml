@@ -1,0 +1,37 @@
+info:
+  name: startDealRegister
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{intershipBaseUrl}}/home/registerStartingDealSection"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: startingDealSectionImage
+        type: file
+        value:
+          - /D:/download.png
+      - name: title
+        type: text
+        value: tt
+      - name: subTitle
+        type: text
+        value: tt
+      - name: categoryId
+        type: text
+        value: 698af8cd97a92783e9707e16
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

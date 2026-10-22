@@ -1,0 +1,23 @@
+info:
+  name: updateCoupon
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/couponSection/updateCoupon/68c2bb2d065148cde65c7093
+  body:
+    type: multipart-form
+    data:
+      - name: couponImage
+        type: file
+        value:
+          - postman-cloud:///1f07c13b-bd64-4510-a124-713b1903fff9
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

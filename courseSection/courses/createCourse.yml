@@ -1,0 +1,64 @@
+info:
+  name: createCourse
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/createCourse
+  body:
+    type: multipart-form
+    data:
+      - name: program
+        type: text
+        value: 69a7194cd5ebe973db3f8b71
+      - name: title
+        type: text
+        value: Course Title
+      - name: description
+        type: text
+        value: course description
+      - name: price
+        type: text
+        value: "1"
+      - name: prerequisite
+        type: text
+        value: course prerequisite
+      - name: syllabus
+        type: text
+        value: course syllabus
+      - name: additionalInformation
+        type: text
+        value: course additionalInformation
+      - name: evalution
+        type: text
+        value: course evalution
+      - name: category
+        type: text
+        value: 69a909421b70c3cc78525a18
+      - name: certificationBy
+        type: text
+        value: Earning Handle
+      - name: courseImage
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/hrute5kymqoyslnttura.webp
+      - name: subImages
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/kwrmcsd2skjs2jasez3j.webp
+          - /C:/Users/solut/Downloads/j09fqzoavesl4ybuzsis.webp
+      - name: courseDuration
+        type: text
+        value: "2"
+      - name: vendorId
+        type: text
+        value: 69a7043cb11f1d68678f0774
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

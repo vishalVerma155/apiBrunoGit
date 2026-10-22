@@ -1,0 +1,25 @@
+info:
+  name: getShippingPaymentReceiptById
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/store/getShippingPayemntReceipt/68d3d2884bc883abda9542a2
+  body:
+    type: text
+    data: "{\r
+
+      \"startDate\" : \"\",\r
+
+      \"endDate\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

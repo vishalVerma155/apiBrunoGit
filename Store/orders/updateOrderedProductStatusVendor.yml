@@ -1,0 +1,38 @@
+info:
+  name: updateOrderedProductStatusVendor
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/updateOrderProductStatus/6a7c00b386cf0c1cd5350c2b
+  body:
+    type: multipart-form
+    data:
+      - name: billPdf
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/Earning Handle - UI_UX Review Report.pdf
+      - name: status
+        type: text
+        value: delivered
+      - name: deliveredAt
+        type: text
+        value: 2025-09-19
+        disabled: true
+      - name: deliveryTrackingNumber
+        type: text
+        value: "1234567890"
+        disabled: true
+      - name: transportName
+        type: text
+        value: abc transport
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

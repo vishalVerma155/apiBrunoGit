@@ -1,0 +1,40 @@
+info:
+  name: createHeroSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/registerHeroSection
+  body:
+    type: multipart-form
+    data:
+      - name: textColor
+        type: text
+        value: "#ffffff"
+      - name: backgroundColor
+        type: text
+        value: "#fcc882"
+      - name: vendorId
+        type: text
+        value: 694a7c5cd00521d9bf1a4a5c
+        disabled: true
+      - name: heroSectionImage
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/Gemini_Generated_Image_6usm2r6usm2r6usm.png
+      - name: image2
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/Gemini_Generated_Image_hhnjzohhnjzohhnj (1).png
+      - name: route
+        type: text
+        value: /earBuds
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

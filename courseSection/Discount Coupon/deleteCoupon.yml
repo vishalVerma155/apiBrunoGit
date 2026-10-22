@@ -1,0 +1,16 @@
+info:
+  name: deleteCoupon
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: http://localhost:4500/discountCoupon/deleteCoupon/69537182cbdecabe06888194
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

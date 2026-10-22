@@ -1,0 +1,27 @@
+info:
+  name: track
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/AI/track
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\":\"69325c85edb320b083420ad8\",\r
+
+      \    \"courseId\":\"692403a55c203e2d5e7a66dd\",\r
+
+      \    \"eventType\":\"purchase\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

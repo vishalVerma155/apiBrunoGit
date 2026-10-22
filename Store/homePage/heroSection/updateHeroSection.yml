@@ -1,0 +1,43 @@
+info:
+  name: updateHeroSection
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateHeroSection/6a6087a84b7397481d15221a
+  body:
+    type: multipart-form
+    data:
+      - name: textColor
+        type: text
+        value: "#000000"
+        disabled: true
+      - name: backgroundColor
+        type: text
+        value: "#ffffff"
+        disabled: true
+      - name: vendorId
+        type: text
+        value: 694a7c5cd00521d9bf1a4a5c
+        disabled: true
+      - name: heroSectionImage
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/ChatGPT Image Jul 15, 2026, 10_26_39 AM.png
+        disabled: true
+      - name: image2
+        type: file
+        value:
+          - /C:/Users/solut/Downloads/app Banner 22july (1).png
+      - name: route
+        type: text
+        value: /earBuds
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

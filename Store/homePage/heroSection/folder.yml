@@ -1,0 +1,7 @@
+info:
+  name: heroSection
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

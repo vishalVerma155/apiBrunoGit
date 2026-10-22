@@ -1,0 +1,23 @@
+info:
+  name: couponSharingLink
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:4500/couponSection/couponSharingLink
+  body:
+    type: json
+    data: "{\r
+
+      \    \"vendorId\" : \"68bbb1b3f7f38be2a89f8a3d\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

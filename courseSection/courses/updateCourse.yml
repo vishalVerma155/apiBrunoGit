@@ -1,0 +1,38 @@
+info:
+  name: updateCourse
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/updateCourse/69a91a9a67e5eca926ebb586
+  body:
+    type: multipart-form
+    data:
+      - name: couponImage
+        type: file
+        value:
+          - postman-cloud:///1f07c13b-bd64-4510-a124-713b1903fff9
+        disabled: true
+      - name: title
+        type: text
+        value: updated title
+      - name: courseImage
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+        disabled: true
+      - name: subImages
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+          - /C:/Users/HP/Pictures/Screenshots/Screenshot (8).png
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,91 @@
+info:
+  name: verifySignature
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/verifySignature
+  body:
+    type: json
+    data: "  {\r
+
+      \  \"prevSignature\": null,\r
+
+      \  \"walletId\": \"68a6fbeab677f05ffd52e8d3\",\r
+
+      \  \"userId\": \"67bd4b4276023f8171ad0092\",\r
+
+      \  \"type\": \"adjustment\",\r
+
+      \  \"drCr\": \"CR\",\r
+
+      \  \"amount\": 10,\r
+
+      \  \"transactionId\": \"TX1234578-CR\",\r
+
+      \  \"idempotencyKey\": \"unique-key-123468\",\r
+
+      \  \"timestamp\": \"2025-08-21T11:00:16.565Z\",\r
+
+      \  \"signature\" : \"c0f268b239192ce8d7beab080435a9ba3fbbcba8663f29667438a4489b956bdc\"\r
+
+      }\r
+
+      \r
+
+      // {\r
+
+      //   prevSignature: null,\r
+
+      //   walletId: '68a6fbeab677f05ffd52e8d3',\r
+
+      //   userId: '67bd4b4276023f8171ad0092',\r
+
+      //   type: 'adjustment',\r
+
+      //   drCr: 'CR',\r
+
+      //   amount: 10,\r
+
+      //   transactionId: 'TX1234578-CR',\r
+
+      //   idempotencyKey: 'unique-key-123468',\r
+
+      //   timestamp: 2025-08-21T11:00:16.568Z\r
+
+      // }\r
+
+      \r
+
+      \  \r
+
+      //   {\r
+
+      //   \"prevSignature\": null,\r
+
+      //   walletId: new ObjectId(\"68a6fbeab677f05ffd52e8d3\"),\r
+
+      //   userId: new ObjectId(\"67bd4b4276023f8171ad0092\"),\r
+
+      //   type: 'adjustment',\r
+
+      //   drCr: 'CR',\r
+
+      //   amount: 10,\r
+
+      //   transactionId: 'TX1234578-CR',\r
+
+      //   idempotencyKey: 'unique-key-123468',\r
+
+      //   timestamp: 2025-08-21T11:00:16.565Z\r
+
+      // }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,23 @@
+info:
+  name: loginAffiliate
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/loginAffiliate
+  body:
+    type: json
+    data: |-
+      {
+          "userName": "demo1@dtest.com",
+          "password": "demo@123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,25 @@
+info:
+  name: addPermission
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: https://api.earninghandle.com/admin/addPermisson/69a9564d201dff2b8aad556a
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\" :\"getUserListExport\",\r
+
+      \    \"path\" : \"/admin/getUserListExport/\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

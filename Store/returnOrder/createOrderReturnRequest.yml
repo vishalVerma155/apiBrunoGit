@@ -1,0 +1,40 @@
+info:
+  name: createOrderReturnRequest
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createOrderReturnRequest
+  body:
+    type: multipart-form
+    data:
+      - name: images
+        type: file
+        value:
+          - /C:/Users/assis/OneDrive/Desktop/natureImage.webp
+          - /C:/Users/assis/OneDrive/Desktop/object_oriented_programming.webp
+      - name: orderProductId
+        type: text
+        value: 68d23d2f1cb3ac263cf6b0ed
+        disabled: true
+      - name: requestType
+        type: text
+        value: replace
+        disabled: true
+      - name: reason
+        type: text
+        value: xyz
+        disabled: true
+      - name: returnQuantity
+        type: text
+        value: "1"
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

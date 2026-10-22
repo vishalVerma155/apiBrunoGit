@@ -1,0 +1,53 @@
+info:
+  name: updateProductStatus
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: https://api.earninghandle.com/store/updateProductStatus
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\" : [\r
+
+      \"6a3e01ba3406a4cfbfc0eb47\",\r
+
+      \"6a3e0c393406a4cfbfc10539\",\r
+
+      \"6a3e08963406a4cfbfc0fa23\",\r
+
+      \"6a3e03533406a4cfbfc0ef5e\",\r
+
+      \"6a3e0d583406a4cfbfc10c98\",\r
+
+      \"6a3e0a6d3406a4cfbfc0ffc0\",\r
+
+      \"6a3e05893406a4cfbfc0f26a\",\r
+
+      \"6a3e15083406a4cfbfc11796\",\r
+
+      \"6a3e17a43406a4cfbfc11fc4\",\r
+
+      \"6a3e0e523406a4cfbfc1114d\",\r
+
+      \"6a3e16e13406a4cfbfc11d0e\",\r
+
+      \"6a3e13da3406a4cfbfc114d1\",\r
+
+      \"6a3e06783406a4cfbfc0f5f5\"\r
+
+      ],\r
+
+      \    \"status\" : \"draft\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

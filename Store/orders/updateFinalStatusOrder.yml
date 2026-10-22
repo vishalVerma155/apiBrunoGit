@@ -1,0 +1,61 @@
+info:
+  name: updateFinalStatusOrder
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/store/updateFinalStatus
+  body:
+    type: text
+    data: "{\r
+
+      \    \"products\" : [\r
+
+      \            {\r
+
+      \                \"product\":\"68778b55742e37f112d180c7\",\r
+
+      \                \"quantity\": 1,\r
+
+      \                \"color\": \"#FFFFFF\",\r
+
+      \                \"size\": \"S\",\r
+
+      \                \"price\" : 550\r
+
+      \            },\r
+
+      \            {\r
+
+      \                \"product\":\"68777ea48669f8d9ec757df7\", \r
+
+      \                \"quantity\": 1,\r
+
+      \                \"color\": \"#000000\",\r
+
+      \                \"size\": \"11\",\r
+
+      \                \"price\" : 999\r
+
+      \            }\r
+
+      \        ],\r
+
+      \        \"shippingAddress\" : \"6878c29c718b6ea9287fca44\",\r
+
+      \        \"billingAddress\" : \"6878c29c718b6ea9287fca44\",\r
+
+      \        \"paymentMethod\" : \"online\",\r
+
+      \        \"shippingCost\" : 50\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,35 @@
+info:
+  name: purchaseCourse
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/purchaseCourse
+  body:
+    type: json
+    data: "{\r
+
+      \    \"courseId\": \"69a91a9a67e5eca926ebb586\",\r
+
+      \    \"buyerId\": \"6a6de007970de218ee7aa3e6\",\r
+
+      \    \"transactionId\": \"asdfghjkljhshbhcdfdfdfg234111\",\r
+
+      \    \"paymentMethod\": \"upi\",\r
+
+      \    \"paymentDetails\": {\r
+
+      \        \"type\" : \"hello\"\r
+
+      \    }\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

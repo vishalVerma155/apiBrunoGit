@@ -1,0 +1,25 @@
+info:
+  name: updateSetting
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/settings/updateSettings
+  body:
+    type: json
+    data: "{\r
+
+      \    \"defaultGroup\": \"prime\",\r
+
+      \    \"minRedeemPoints\": 5000\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

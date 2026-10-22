@@ -1,0 +1,16 @@
+info:
+  name: deleteAnyProfile
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: http://localhost:4500/admin/deleteAnyUser/67c2edb355caa53e23287c30
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

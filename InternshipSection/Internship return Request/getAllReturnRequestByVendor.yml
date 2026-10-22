@@ -1,0 +1,27 @@
+info:
+  name: getAllReturnRequestByVendor
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://api.earninghandle.co.in/internshipSection/getAllReturnRequestByVendor
+  body:
+    type: text
+    data: "{\r
+
+      \    \"purchaseInternshipId\": \"698da936129a7f99dc56dd31\",\r
+
+      \    \"internshipId\": \"698d6d934b4fd5846dec2ebb\",\r
+
+      \    \"reason\": \"waste of money\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

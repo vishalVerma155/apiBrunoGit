@@ -1,0 +1,27 @@
+info:
+  name: createReturnRequest
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://api.earninghandle.co.in/internshipSection/createReturnRequest
+  body:
+    type: json
+    data: "{\r
+
+      \    \"purchaseInternshipId\": \"69b8e635ada8b525e6eca7c7\",\r
+
+      \    \"internshipId\": \"69a9513f67e5eca926ebc383\",\r
+
+      \    \"reason\": \"waste of money\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

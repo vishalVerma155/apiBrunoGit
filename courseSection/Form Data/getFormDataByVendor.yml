@@ -1,0 +1,29 @@
+info:
+  name: getFormDataByVendor
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:4500/courseSection/getAdminFormDataForVendor
+  body:
+    type: text
+    data: "{\r
+
+      \    // \"userName\" : \"vn@05.com\", // products\r
+
+      \    \"userName\" : \"arorajayant852@gmail.com\", // courses\r
+
+      \    // \"password\" : \"123456789\" //courses\r
+
+      \    \"password\" : \"000000\" //products\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

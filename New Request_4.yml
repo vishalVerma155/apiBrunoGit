@@ -1,0 +1,23 @@
+info:
+  name: New Request_4
+  type: http
+  seq: 34
+
+http:
+  method: GET
+  url: http://localhost:4500/courseSection/track?af_id=AF1219&pr_id=69a91a9a67e5eca926ebb586
+  params:
+    - name: af_id
+      value: AF1219
+      type: query
+    - name: pr_id
+      value: 69a91a9a67e5eca926ebb586
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

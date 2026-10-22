@@ -1,0 +1,27 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/designation/update/693a61da887d6d1015f75819
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Silver Achieverr\",\r
+
+      \    \"salesTarget\": 100000,\r
+
+      \    \"description\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,32 @@
+info:
+  name: deleteStartingDeal
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:4500/courseSection/home/deleteStartingDealSection/6920553aae16f1ae57e30a17
+  body:
+    type: multipart-form
+    data:
+      - name: startingDealSectionImage
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+      - name: title
+        type: text
+        value: up
+      - name: subTitle
+        type: text
+        value: up
+      - name: categoryId
+        type: text
+        value: 68285f750e829db58fb65ccf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

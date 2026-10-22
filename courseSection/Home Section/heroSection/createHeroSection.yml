@@ -1,0 +1,36 @@
+info:
+  name: createHeroSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/home/registerHeroSection
+  body:
+    type: multipart-form
+    data:
+      - name: heroSectionImage
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+      - name: textColor
+        type: text
+        value: "#000000"
+      - name: backgroundColor
+        type: text
+        value: "#ffffff"
+      - name: vendorId
+        type: text
+        value: 694a7c5cd00521d9bf1a4a5c
+      - name: image2
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

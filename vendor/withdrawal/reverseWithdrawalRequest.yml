@@ -1,0 +1,25 @@
+info:
+  name: reverseWithdrawalRequest
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/withdrawal/reverseWithdrawalRequest
+  body:
+    type: json
+    data: "{\r
+
+      \    \"withdrawalReqId\" : \"68d507c08ebc24ac80e131ab\",\r
+
+      \    \"reason\" : \"xyz\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

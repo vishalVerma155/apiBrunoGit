@@ -1,0 +1,23 @@
+info:
+  name: addUserGroup
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/group/editUserGroup/67bd4bbe76023f8171ad009b
+  body:
+    type: json
+    data: "{\r
+
+      \    \"groupName\" : \"gold\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

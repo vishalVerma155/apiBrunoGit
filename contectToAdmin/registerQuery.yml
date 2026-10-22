@@ -1,0 +1,41 @@
+info:
+  name: registerQuery
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/contectAdmin/registerQuery
+  body:
+    type: multipart-form
+    data:
+      - name: attachment
+        type: file
+        value:
+          - postman-cloud:///1efe47fa-5a6d-4b50-ad20-621ad47ee78e
+      - name: firstName
+        type: text
+        value: VIshal
+      - name: lastName
+        type: text
+        value: Verma
+      - name: phoneNumber
+        type: text
+        value: "1234567890"
+      - name: domainName
+        type: text
+        value: xyz.com
+      - name: subject
+        type: text
+        value: query
+      - name: body
+        type: text
+        value: test query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

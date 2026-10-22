@@ -1,0 +1,27 @@
+info:
+  name: getAllFormData
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/courseSection/getAllFormData"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"vendorId\":\"695de2a7c119e141753e1b70\"\r
+
+      \    // \"page\": 1,\r
+
+      \    // \"limit\": 30\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

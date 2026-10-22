@@ -1,0 +1,22 @@
+info:
+  name: editCampaign
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: http://localhost:4500/vendor/editCampaign/6ab4b9370fea2a90339869af
+  body:
+    type: json
+    data: |-
+      {
+        "category":["6aa4550f9d5b34ce40cbcb37", "6aa3c50b07c0bbeee0b4dbfd", "68cb88518adc9d4d6c79c8f4"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

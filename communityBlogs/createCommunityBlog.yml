@@ -1,0 +1,30 @@
+info:
+  name: createCommunityBlog
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/api/community-blogs/createBlog
+  body:
+    type: multipart-form
+    data:
+      - name: heading
+        type: text
+        value: Test blog Heading
+      - name: description
+        type: text
+        value: test blog
+      - name: blogImage
+        type: file
+        value:
+          - C:\Users\assis\OneDrive\Desktop\natureImage.webp
+        contentType: image/webp
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

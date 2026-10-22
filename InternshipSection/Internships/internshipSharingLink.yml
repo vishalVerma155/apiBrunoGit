@@ -1,0 +1,23 @@
+info:
+  name: internshipSharingLink
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/internshipSection/internshipSharingLink
+  body:
+    type: json
+    data: "{\r
+
+      \    \"internshipId\" : \"69a94f1167e5eca926ebc2fc\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

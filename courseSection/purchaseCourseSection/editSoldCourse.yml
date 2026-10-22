@@ -1,0 +1,45 @@
+info:
+  name: editSoldCourse
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/editSoldCourse/6a7455aceaaee248ea436a81
+  body:
+    type: multipart-form
+    data:
+      - name: certificateHeading
+        type: text
+        value: sdfghj
+        disabled: true
+      - name: certificateId
+        type: text
+        value: asdfghjkljhgfdsdfgh
+        disabled: true
+      - name: credentialSent
+        type: text
+        value: " true"
+        disabled: true
+      - name: id
+        type: text
+        value: "1234567890"
+      - name: password
+        type: text
+        value: "2580"
+      - name: panelLink
+        type: text
+        value: https://www.amazon.com
+      - name: certificate
+        type: file
+        value:
+          - /D:/extraData/extraData/Internship_Questions.pdf
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,47 @@
+info:
+  name: registerBankDetails
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/bank/registerBankDetails
+  body:
+    type: multipart-form
+    data:
+      - name: accountName
+        type: text
+        value: ayx
+      - name: accountNumber
+        type: text
+        value: " 123456789012344"
+      - name: IFSCCode
+        type: text
+        value: " PUNB0095"
+      - name: bankName
+        type: text
+        value: " pnb"
+        disabled: true
+      - name: bankAddress
+        type: text
+        value: " 1234csdd"
+        disabled: true
+      - name: city
+        type: text
+        value: " rohtak"
+      - name: state
+        type: text
+        value: " haryana"
+      - name: proofImage
+        type: file
+        value:
+          - postman-cloud:///1f07c13e-2f0a-4550-981e-9f2fdb04d877
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

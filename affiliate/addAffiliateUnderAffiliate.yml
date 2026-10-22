@@ -1,0 +1,25 @@
+info:
+  name: addAffiliateUnderAffiliate
+  type: http
+  seq: 18
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/addAffiliateUnderAffiliate
+  body:
+    type: json
+    data: "{\r
+
+      \    \"referrerId\" : \"67bd4b4276023f8171ad0092\", // refferrer\r
+
+      \    \"userId\" : \"67bd4bbe76023f8171ad009b\" // user who you want to add in affiliate tree\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

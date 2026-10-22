@@ -1,0 +1,33 @@
+info:
+  name: createRewardPoints
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/createRewardPoints
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\" : \"6a61df96d5d1e517b4107daa\",\r
+
+      \    \"title\" : \"Refferal Reward Points\",\r
+
+      \    \"points\" : 100,\r
+
+      \    \"pointValue\" : 10,\r
+
+      \    \"type\" : \"REFERRAL\",\r
+
+      \    \"referenceId\" : \"6a61fa890cec243d6a47c60d\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

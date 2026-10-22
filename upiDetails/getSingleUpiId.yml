@@ -1,0 +1,16 @@
+info:
+  name: getSingleUpiId
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:4500/upi/getUpiDetails/67bbf04c3f1c9432555a5ca0
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

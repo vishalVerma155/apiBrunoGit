@@ -1,0 +1,16 @@
+info:
+  name: New Request
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{intershipBaseUrl}}/home/deleteDealOfTheWeekSection/698c606f552cb6c202cfa22e"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

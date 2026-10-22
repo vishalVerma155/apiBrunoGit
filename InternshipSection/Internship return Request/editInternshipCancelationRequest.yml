@@ -1,0 +1,31 @@
+info:
+  name: editInternshipCancelationRequest
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/InternshipSection/editInternshipCancelationRequest/69a28f7c3d048a8bb22970eb
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\": \"refundCompleted\",\r
+
+      \    \"refundDate\":\"2026-02-28\",\r
+
+      \    \"refundTranstionNumber\":\"123456787654321\"\r
+
+      \    // approvedCancelation\r
+
+      \    // \"cancelationRequestpending\", \"approvedCancelation\", \"deniedCancelation\", \"refundProcessing\", \"refundCompleted\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

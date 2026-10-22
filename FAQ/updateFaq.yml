@@ -1,0 +1,19 @@
+info:
+  name: updateFaq
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/faq/updateFaq/695b9bf7f944ccb7a222036f
+  body:
+    type: json
+    data: "{\r\n \"isActive\": false   \r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

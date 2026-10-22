@@ -1,0 +1,39 @@
+info:
+  name: addDataToWallet
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/wallet/addDataToWallet
+  body:
+    type: json
+    data: "{\r
+
+      \  \"transactionId\": \"e19a3ada-dc4c-47ed-a264-47eda146eda2\",\r
+
+      \  \"amount\": 4287.6,\r
+
+      \  \"status\": \"paid\",\r
+
+      \  \"vendorPaymentReceipt\": \"69242ab21f25e225803de674\",\r
+
+      \  \"giverId\": \"68a404def358202d178e6b6a\",\r
+
+      \  \"getterId\": \"69215329e78a382720383309\",\r
+
+      \  \"idempotencyKey\": \"35da8e7c-8a6c-4c18-9231-c47e803ff02b\",\r
+
+      \  \"type\": \"coursePayment\",\r
+
+      \  \"transactionType\": \"TRANSFER\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

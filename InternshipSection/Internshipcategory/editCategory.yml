@@ -1,0 +1,43 @@
+info:
+  name: editCategory
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: https://api.earninghandle.co.in/internshipSection/editCategory/69b7dfe5d27e5a46bd3953e9
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: Full Stack Developer
+        disabled: true
+      - name: features
+        type: text
+        value: FGHJK
+        disabled: true
+      - name: features
+        type: text
+        value: bjnkl
+        disabled: true
+      - name: image
+        type: file
+        value:
+          - postman-cloud:///1f019c18-e0af-4270-bb0f-c961c6d12ee3
+        disabled: true
+      - name: parent
+        type: text
+        value: 69b7de57d27e5a46bd394ff6
+        disabled: true
+      - name: removeParent
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

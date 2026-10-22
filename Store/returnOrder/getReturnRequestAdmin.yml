@@ -1,0 +1,29 @@
+info:
+  name: getReturnRequestAdmin
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:4500/store/getReturnRequestsAdmin
+  body:
+    type: json
+    data: "{\r
+
+      //   \"startDate\": \"2025-08-01\",\r
+
+      //   \"endDate\": \"2025-08-14\",\r
+
+      \  \"requestType\": \"replace\", //return replace\r
+
+      \  \"status\": \"replacementDelivered\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

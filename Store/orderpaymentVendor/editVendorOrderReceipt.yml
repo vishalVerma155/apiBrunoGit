@@ -1,0 +1,23 @@
+info:
+  name: editVendorOrderReceipt
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/editVendorOrderReceipt/68ca7df596f05e1e000da230
+  body:
+    type: multipart-form
+    data:
+      - name: vendorProductReceipt
+        type: file
+        value:
+          - postman-cloud:///1f08728d-f208-4f60-849c-96fb07b511ae
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

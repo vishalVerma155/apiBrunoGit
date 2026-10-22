@@ -1,0 +1,16 @@
+info:
+  name: affiliateTreeForAdmin
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: http://localhost:4500/admin/getAllAffiliateTree
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

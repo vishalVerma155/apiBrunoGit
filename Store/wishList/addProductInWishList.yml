@@ -1,0 +1,27 @@
+info:
+  name: addProductInWishList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/addProductInWishList/68a84be68002766f9e32ba5d
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"color\" : \"#FFFFFF\",  if color is existed then color otherwise null\r
+
+      \    \"size\" : \"xl\",  //if size is existed then color otherwise null\r
+
+      \    \"quantity\" : 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

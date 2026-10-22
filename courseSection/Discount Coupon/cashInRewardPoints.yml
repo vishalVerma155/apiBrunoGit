@@ -1,0 +1,23 @@
+info:
+  name: cashInRewardPoints
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/cashInRewardPoints
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\" : [\"69ea06f0cfc4cba8fd816af9\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

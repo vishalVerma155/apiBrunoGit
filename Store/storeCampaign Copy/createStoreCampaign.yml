@@ -1,0 +1,95 @@
+info:
+  name: createStoreCampaign
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createStoreCampaign
+  body:
+    type: multipart-form
+    data:
+      - name: toolType
+        type: text
+        value: storeIntegration
+      - name: campaignType
+        type: text
+        value: storeCampaign
+      - name: name
+        type: text
+        value: White Plain Shirt
+      - name: mrp
+        type: text
+        value: "4000"
+      - name: productPrice
+        type: text
+        value: "2000"
+      - name: categories[]
+        type: text
+        value: 68285f6c0e829db58fb65ccc
+      - name: vendorComment
+        type: text
+        value: This is our best product
+      - name: program
+        type: text
+        value: 68a82f568002766f9e32a7ef
+      - name: productSizes[]
+        type: text
+        value: S
+      - name: productSizes[]
+        type: text
+        value: M
+      - name: productSizes[]
+        type: text
+        value: L
+      - name: colour[]
+        type: text
+        value: "#FFFFFF"
+      - name: colour[]
+        type: text
+        value: "#FF0000"
+      - name: rating
+        type: text
+        value: "5"
+      - name: discount
+        type: text
+        value: "5"
+      - name: onSale
+        type: text
+        value: "false"
+      - name: featured
+        type: text
+        value: "false"
+      - name: gender
+        type: text
+        value: men
+      - name: productDescription
+        type: text
+        value: productDescription
+      - name: additionalInformation
+        type: text
+        value: additionalInformation
+      - name: url
+        type: text
+        value: fdsfdtrdfty
+      - name: isThirdParty
+        type: text
+        value: "true"
+      - name: campaignImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-27 155241.png
+      - name: subImages
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-27 153305.png
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-27 153250.png
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-27 124253.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

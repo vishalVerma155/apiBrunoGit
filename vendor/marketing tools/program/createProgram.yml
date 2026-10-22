@@ -1,0 +1,69 @@
+info:
+  name: createProgram
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/vendor/createMarketingProgram
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"userId\":\"69a7043cb11f1d68678f0774\",\r
+
+      \    \"programName\" : \"Titan\",\r
+
+      \    \"commissionType\" : \"percentage\",\r
+
+      \    \"vendorComment\" : \"great\",\r
+
+      \    \"totalCommission\" : 100,\r
+
+      \    \"willShippingTake\" : false,\r
+
+      \    \"productReturnDays\":0,\r
+
+      \    \"isSuperProgram\" : false,\r
+
+      \    \"useSuperProgram\" : true,\r
+
+      \    \"type\" : \"thirdParty\",\r
+
+      \    // \"thirdPartyType\" : \"\",\r
+
+      \    // \"totalMLMLevel\" : 2,\r
+
+      \    // \"adminCommission\" : 60,\r
+
+      \    // \"commissions\" : [\r
+
+      \    //     {\r
+
+      \    //         \"level\": 1,\r
+
+      \    //         \"commission\": 30\r
+
+      \    //     },\r
+
+      \    //     {\r
+
+      \    //         \"level\": 2,\r
+
+      \    //         \"commission\": 10\r
+
+      \    //     }\r
+
+      \    // ],\r
+
+      \    \"superProgramReference\":\"6a2a895c7b23e17db1be425d\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,95 @@
+info:
+  name: cuelinkWebhook
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/api/partner-programs/webhhok
+  body:
+    type: json
+    data: "{\r
+
+      \    \"transaction_id\": \"34484161029\",\r
+
+      \    \"campaign_name\": \"Boat\",\r
+
+      \    \"campaign_id\": \"4232\",\r
+
+      \    \"transaction_date\": \"2026-07-18T00:00:00.000Z\",\r
+
+      \    \"transaction_reference_id\": \"1296017307\",\r
+
+      \    \"sale_amount\": 1184,\r
+
+      \    \"user_commission\": 63.98,\r
+
+      \    \"status\": \"pending\",\r
+
+      \    \"ip_address\": \"115.246.82.3\",\r
+
+      \    \"currency\": \"{\\\"acronym\\\"=>\\\"INR\\\"}\",\r
+
+      \    \"referral_url\": \"\",\r
+
+      \    \"sub_id\": \"AF1186\",\r
+
+      \    \"sub_id2\": \"6a2a895c7b23e17db1be425d\",\r
+
+      \    \"sub_id3\": \"\",\r
+
+      \    \"sub_id4\": \"\",\r
+
+      \    \"source\": \"s2s\",\r
+
+      \    \"extra_info\": \"#9957796\",\r
+
+      \    \"security_key\" : \"nduh3wueybuwuyeu3bduye\",\r
+
+      \    \"raw_payload\": {\r
+
+      \        \"transaction_id\": \"34484869\",\r
+
+      \        \"campaign_name\": \"Boat\",\r
+
+      \        \"campaign_id\": \"4232\",\r
+
+      \        \"transaction_date\": \"2026-07-18T00:00:00.000Z\",\r
+
+      \        \"transaction_reference_id\": \"1296017307\",\r
+
+      \        \"sale_amount\": 1184,\r
+
+      \        \"user_commission\": 63.98,\r
+
+      \        \"status\": \"pending\",\r
+
+      \        \"ip_address\": \"115.246.82.3\",\r
+
+      \        \"currency\": \"{\\\"acronym\\\"=>\\\"INR\\\"}\",\r
+
+      \        \"referral_url\": \"\",\r
+
+      \        \"sub_id\": \"AF1499\",\r
+
+      \        \"sub_id2\": \"6a2a895c7b23e17db1be425d\",\r
+
+      \        \"sub_id3\": \"\",\r
+
+      \        \"sub_id4\": \"\",\r
+
+      \        \"source\": \"s2s\",\r
+
+      \        \"extra_info\": \"#9957796\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

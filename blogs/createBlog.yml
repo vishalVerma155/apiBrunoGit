@@ -1,0 +1,39 @@
+info:
+  name: createBlog
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/blog/createBlog
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: blog title
+      - name: subtitle
+        type: text
+        value: blog subtitle
+      - name: content
+        type: text
+        value: content
+      - name: category
+        type: text
+        value: test
+      - name: mainImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-08 113719.png
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/solut/OneDrive/Pictures/Screenshots/Screenshot 2026-05-08 113719.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

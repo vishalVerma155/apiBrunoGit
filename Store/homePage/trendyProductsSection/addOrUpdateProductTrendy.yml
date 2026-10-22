@@ -1,0 +1,23 @@
+info:
+  name: addOrUpdateProductTrendy
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/addOrUpdateProductTrendySecton/686fee77b6153742cec1c921
+  body:
+    type: json
+    data: "{\r
+
+      \    \"products\" : [{\"productId\" : \"6867886e36b83497ec6c9e84\", \"type\" : \"bestSeller\"}, {\"productId\" : \"686788a636b83497ec6c9e8a\",\"type\" : \"bestSeller\" }, {\"productId\" : \"686feb6eb6153742cec1c87e\", \"type\" : \"bestSeller\"}]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

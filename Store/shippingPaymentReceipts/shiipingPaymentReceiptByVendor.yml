@@ -1,0 +1,25 @@
+info:
+  name: shiipingPaymentReceiptByVendor
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/getAllShippingPaymentReceiptVendor
+  body:
+    type: json
+    data: "{\r
+
+      \"startDate\" : \"\",\r
+
+      \"endDate\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

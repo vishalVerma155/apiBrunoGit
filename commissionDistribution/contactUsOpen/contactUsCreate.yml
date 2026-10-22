@@ -1,0 +1,29 @@
+info:
+  name: contactUsCreate
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/contactUsOpen/createQueryOp
+  body:
+    type: json
+    data: "{\r
+
+      \    \"email\" : \"admin@gmail.com\",\r
+
+      \    \"name\" : \"test query\",\r
+
+      \    \"subject\" : \"test sibject\",\r
+
+      \    \"query\" : \"test querires checking\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

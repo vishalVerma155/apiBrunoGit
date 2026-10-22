@@ -1,0 +1,29 @@
+info:
+  name: commisionFilter
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/filterCommission
+  body:
+    type: json
+    data: "{\r
+
+      \    \"integrationType\" : \"sale integration\",\r
+
+      \    \"paymentStatus\" : \"paid\"\r
+
+      \    // \"startDate\" : \"2025-03-01\",\r
+
+      \    // \"endDate\" : \"2025-03-01\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

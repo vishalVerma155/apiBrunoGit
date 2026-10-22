@@ -1,0 +1,104 @@
+info:
+  name: createInternship
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/internshipSection/createInternship
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: Mern Developer
+      - name: program
+        type: text
+        value: 6909a4828911f69d02798836
+      - name: description
+        type: text
+        value: Data Analysis
+      - name: price
+        type: text
+        value: "1"
+      - name: prerequisite
+        type: text
+        value: Data Analysis prerequisite
+      - name: syllabus
+        type: text
+        value: "Data Analysis Intern "
+      - name: certificationBy
+        type: text
+        value: New Edge Soft tech
+      - name: additionalInformation
+        type: text
+        value: course additionalInformation
+      - name: evalution
+        type: text
+        value: Data Analysis  evalution
+      - name: category
+        type: text
+        value: 6a92ad8eba12ca306cd2c38f
+      - name: status
+        type: text
+        value: public
+      - name: trendyType
+        type: text
+        value: " newArrival"
+      - name: internshipDuration
+        type: text
+        value: " 3"
+      - name: campaignType
+        type: text
+        value: digitalProduct
+      - name: internshipType
+        type: text
+        value: onSite
+      - name: numberOfOpenings
+        type: text
+        value: "1000"
+      - name: skills
+        type: text
+        value: "Node js "
+      - name: skills
+        type: text
+        value: MongoDb
+      - name: validThrough
+        type: text
+        value: 2026-03-01
+      - name: educationRequirements
+        type: text
+        value: "b tech "
+      - name: ""
+        type: text
+        value: online,hybrid
+        disabled: true
+      - name: internshipImage
+        type: file
+        value:
+          - /D:/dot & key (1).png
+      - name: subImages
+        type: file
+        value:
+          - /D:/dot & key (1).png
+          - /D:/1234.jpg
+      - name: city
+        type: text
+        value: Rohtak
+      - name: state
+        type: text
+        value: Haryana
+      - name: country
+        type: text
+        value: Indian
+      - name: mrp
+        type: text
+        value: "1234"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

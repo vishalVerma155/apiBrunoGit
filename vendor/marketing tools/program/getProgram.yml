@@ -1,0 +1,16 @@
+info:
+  name: getProgram
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/vendor/getMarketingProgram/694a827a58aeec8284e71b05
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

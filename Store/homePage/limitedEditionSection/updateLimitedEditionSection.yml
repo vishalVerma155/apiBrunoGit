@@ -1,0 +1,23 @@
+info:
+  name: updateLimitedEditionSection
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/home/updateLimitedEditionProducts/68bbcc91f7f38be2a89f8e8e
+  body:
+    type: json
+    data: "{\r
+
+      \    \"products\" : [\"6867886e36b83497ec6c9e84\", \"686e08cb6a679a05d5e5264b\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

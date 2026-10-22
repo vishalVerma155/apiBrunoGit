@@ -1,0 +1,57 @@
+info:
+  name: productBuyUrl
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/api/partner-programs/productUrlBuy
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\":\"\",\r
+
+      \  \"mrp\":\"\",\r
+
+      \  \"productPrice\":\"\",\r
+
+      \  \"rating\": ,\r
+
+      \  \"discount\": ,\r
+
+      \  \"vendorComment\":\"\",\r
+
+      \  \"program\":\"\",\r
+
+      \  \"gender\":\"\",\r
+
+      \  \"productDescription\":\"\",\r
+
+      \  \"additionalInformation\":\"\",\r
+
+      \  \"toolType\": \"storeIntegration\",\r
+
+      \  \"campaignType\": \"storeCampaign\",\r
+
+      \  \"vendorSku\":\"\",\r
+
+      \  \"categories\":[],\r
+
+      \  \"productSizes\":[],\r
+
+      \  \"colour\":[],\r
+
+      \  \"campaignImage\":,\r
+
+      \  \"subImages\":[],\r
+
+      };"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

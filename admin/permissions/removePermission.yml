@@ -1,0 +1,25 @@
+info:
+  name: removePermission
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/removePermisson/698097252c32286799795549
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"name\" :\"adminOne@earninghandle.com\",\r
+
+      \    \"path\" : \"/InternshipSection/getAllReturnRequestAdmin\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

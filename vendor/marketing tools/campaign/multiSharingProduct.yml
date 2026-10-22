@@ -1,0 +1,23 @@
+info:
+  name: multiSharingProduct
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/vendor/multiSharingProduct
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productIds\" : [\"6a393d1e6d90f61dc3b1e9cb\", \"6a393d1e6d90f61dc3b1e9e1\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

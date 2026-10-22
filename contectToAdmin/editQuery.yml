@@ -1,0 +1,19 @@
+info:
+  name: editQuery
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/contectAdmin/editQuery/67d018566bf2f25ffb1a5279
+  body:
+    type: json
+    data: "{\r\n    \"status\" : \"solved\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

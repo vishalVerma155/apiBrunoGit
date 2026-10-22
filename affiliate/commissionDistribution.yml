@@ -1,0 +1,25 @@
+info:
+  name: commissionDistribution
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/dis
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sellerId\" : \"67b953d6da4f15f5343767ed\",\r
+
+      \    \"totalAmount\" : 100\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

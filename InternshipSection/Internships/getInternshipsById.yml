@@ -1,0 +1,23 @@
+info:
+  name: getInternshipsById
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:4500/internshipSection/getInternshipsById/69a94f1167e5eca926ebc2fc
+  body:
+    type: text
+    data: "{\r
+
+      \"title\" : \"test coupon 1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

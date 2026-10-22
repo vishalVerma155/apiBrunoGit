@@ -1,0 +1,25 @@
+info:
+  name: getWithdrwalRequestForAdmin
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/withdrawal/getAllWithdrawalRequest
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"limit\":1,\r
+
+      \    // \"page\":2   \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

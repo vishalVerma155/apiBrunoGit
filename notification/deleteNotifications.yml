@@ -1,0 +1,23 @@
+info:
+  name: deleteNotifications
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:4500/notification/deleteNotifications
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\" : [\"6836ab723998db532f040397\", \"6836abb23998db532f0403df\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

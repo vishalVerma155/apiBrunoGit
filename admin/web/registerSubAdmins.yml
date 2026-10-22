@@ -1,0 +1,31 @@
+info:
+  name: registerSubAdmins
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: http://localhost:4500/admin/registerSubAdmins
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fullName\": \"Manager Two\",\r
+
+      \  \"email\": \"m2@example.com\",\r
+
+      \  \"password\": \"Passw0rd!\",\r
+
+      \  \"role\": \"sub_admin\",\r
+
+      \  \"phoneNumber\": \"9999900003\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

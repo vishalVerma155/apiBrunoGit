@@ -1,0 +1,23 @@
+info:
+  name: createImpersonate
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/admin/impersonate/impersonate-user
+  body:
+    type: json
+    data: "{\r
+
+      \    \"userId\" : \"67b952dfda4f15f5343767ce\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,25 @@
+info:
+  name: getVendorReferalCoupons
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/vendorReffererCoupons
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"startDate\": \"2026-03-01\",\r
+
+      \    // \"endDate\": \"2026-05-01\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

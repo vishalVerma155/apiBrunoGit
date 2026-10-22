@@ -1,0 +1,16 @@
+info:
+  name: deleteUpiId
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:4500/upi/deleteUpiDetail/67bbf04c3f1c9432555a5ca0
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

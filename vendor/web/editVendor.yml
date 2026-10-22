@@ -1,0 +1,25 @@
+info:
+  name: editVendor
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: http://localhost:4500/vendor/editVendor/697862a30da66bb8ae2e43a7
+  body:
+    type: json
+    data: "{\r
+
+      \    \"country\" : \"India\",\r
+
+      \    \"storeName\" : \"Akkad Bakkad\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

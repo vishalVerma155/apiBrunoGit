@@ -1,0 +1,33 @@
+info:
+  name: getAllQueries
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/contectAdmin/getAllQueriesAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"status\" : \"solved\",\r
+
+      \    // \"firstName\" : \"\",\r
+
+      \    // \"phoneNumber\" : \"\"\r
+
+      \r
+
+      \r
+
+      \    \"type\":\"query\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

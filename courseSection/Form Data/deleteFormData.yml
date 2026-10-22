@@ -1,0 +1,16 @@
+info:
+  name: deleteFormData
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/courseSection/deleteFormData/69242409d387dab434b1f4af"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

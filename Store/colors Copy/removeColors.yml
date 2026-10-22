@@ -1,0 +1,23 @@
+info:
+  name: removeColors
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/removeColors
+  body:
+    type: json
+    data: "{\r
+
+      \    \"colors\" : [\"#000aaa\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

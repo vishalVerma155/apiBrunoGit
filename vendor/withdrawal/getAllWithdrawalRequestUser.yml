@@ -1,0 +1,29 @@
+info:
+  name: getAllWithdrawalRequestUser
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/withdrawal/getAllWithdrawalRequestUser
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"status\" : \"processed\"\r
+
+      \    // \"paymentMethod\" : \"upi\"\r
+
+      \    // \"startDate\" : \"2025-04-28\",\r
+
+      \    // \"endDate\" : \"2025-04-28\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

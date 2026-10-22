@@ -1,0 +1,16 @@
+info:
+  name: getBlogUser
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:4500/api/community-blogs/getBlogUser
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

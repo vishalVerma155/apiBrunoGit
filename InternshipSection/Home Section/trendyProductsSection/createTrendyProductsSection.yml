@@ -1,0 +1,49 @@
+info:
+  name: createTrendyProductsSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{intershipBaseUrl}}/home/registerTrendyProducts"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Internships\": [\r
+
+      \        {\r
+
+      \            \"InternshipId\": \"698b042ce731b2e690164488\",\r
+
+      \            \"type\": \"topRated\"\r
+
+      \        }\r
+
+      \        // {\r
+
+      \        //     \"CourseId\": \"691d95f841436644d1247182\",\r
+
+      \        //     \"type\": \"newArrival\"\r
+
+      \        // },\r
+
+      \        // {\r
+
+      \        //     \"CourseId\": \"691d67331968b94e4b6da6ff\",\r
+
+      \        //     \"type\": \"bestSeller\"\r
+
+      \        // }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

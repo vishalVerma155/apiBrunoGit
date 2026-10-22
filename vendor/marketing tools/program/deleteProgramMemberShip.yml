@@ -1,0 +1,23 @@
+info:
+  name: deleteProgramMemberShip
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://localhost:4500/vendor/deleteProgramMemberShip/694a827a58aeec8284e71b05
+  body:
+    type: json
+    data: "{\r
+
+      \ \"programMemberShipId\":\"694b6eaa340291d061d66750\"   \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

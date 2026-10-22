@@ -1,0 +1,176 @@
+info:
+  name: createStoreCampaign
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createStoreCampaign
+  body:
+    type: multipart-form
+    data:
+      - name: toolType
+        type: text
+        value: storeIntegration
+        disabled: true
+      - name: campaignType
+        type: text
+        value: storeCampaign
+        disabled: true
+      - name: name
+        type: text
+        value: White Plain Shirt
+        disabled: true
+      - name: mrp
+        type: text
+        value: "4000"
+        disabled: true
+      - name: productPrice
+        type: text
+        value: "2000"
+        disabled: true
+      - name: category
+        type: text
+        value: 6a926cf152faa6be473b0bec
+        disabled: true
+      - name: vendorComment
+        type: text
+        value: This is our best product
+        disabled: true
+      - name: program
+        type: text
+        value: 68a82f568002766f9e32a7ef
+        disabled: true
+      - name: productSizes[]
+        type: text
+        value: S
+        disabled: true
+      - name: productSizes[]
+        type: text
+        value: M
+        disabled: true
+      - name: productSizes[]
+        type: text
+        value: L
+        disabled: true
+      - name: colour[]
+        type: text
+        value: "#FFFFFF"
+        disabled: true
+      - name: colour[]
+        type: text
+        value: "#FF0000"
+        disabled: true
+      - name: rating
+        type: text
+        value: "5"
+        disabled: true
+      - name: discount
+        type: text
+        value: "5"
+        disabled: true
+      - name: onSale
+        type: text
+        value: "false"
+        disabled: true
+      - name: featured
+        type: text
+        value: "false"
+        disabled: true
+      - name: gender
+        type: text
+        value: men
+        disabled: true
+      - name: productDescription
+        type: text
+        value: productDescription
+        disabled: true
+      - name: additionalInformation
+        type: text
+        value: additionalInformation
+        disabled: true
+      - name: url
+        type: text
+        value: fdsfdtrdfty
+        disabled: true
+      - name: isThirdParty
+        type: text
+        value: "false"
+        disabled: true
+      - name: name
+        type: text
+        value: Ajmal Oud perfume
+      - name: mrp
+        type: text
+        value: "1500"
+      - name: productPrice
+        type: text
+        value: "1000"
+      - name: rating
+        type: text
+        value: "5"
+      - name: discount
+        type: text
+        value: "33"
+      - name: vendorComment
+        type: text
+        value: dfgh
+      - name: program
+        type: text
+        value: 6909a4828911f69d02798836
+      - name: gender
+        type: text
+        value: men
+      - name: productDescription
+        type: text
+        value: Test Product
+      - name: additionalInformation
+        type: text
+        value: Test Product
+      - name: toolType
+        type: text
+        value: storeIntegration
+      - name: campaignType
+        type: text
+        value: storeCampaign
+      - name: vendorSku
+        type: text
+        value: ""
+        disabled: true
+      - name: category
+        type: text
+        value: 68bfc07ea7b459d3d17efd50
+      - name: productSizes
+        type: text
+        value: 75ml
+      - name: campaignImage
+        type: file
+        value:
+          - /D:/images.jpg
+        disabled: true
+      - name: subImages
+        type: file
+        value:
+          - /D:/images.jpg
+        disabled: true
+      - name: subImages
+        type: file
+        value:
+          - /D:/images.jpg
+        disabled: true
+      - name: campaignImage
+        type: file
+        value: []
+        disabled: true
+      - name: subImages
+        type: file
+        value: []
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

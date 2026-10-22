@@ -1,0 +1,33 @@
+info:
+  name: deleteCouponSetting
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:4500/settings/deleteCouponSetting/69d757854d1400e6b2732e06
+  body:
+    type: text
+    data: "{\r
+
+      \  \"couponType\": \"SURVAYyy\",\r
+
+      \  \"discountValue\": 1001,\r
+
+      \  \"discountType\": \"FLAT\",\r
+
+      \  \"usagePerUser\": 11,\r
+
+      \  \"usageLimit\": 11,\r
+
+      \  \"isDisabled\" : false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

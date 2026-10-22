@@ -1,0 +1,31 @@
+info:
+  name: createFaq
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/faq/createFaq
+  body:
+    type: json
+    data: "{\r
+
+      \  \"question\": \"How can I reset my password?\",\r
+
+      \  \"answer\": \"You can reset your password by going to the login page and clicking on 'Forgot Password'.\",\r
+
+      \  \"category\": \"Account\",\r
+
+      \  \"isActive\": true,\r
+
+      \  \"visibleFor\": \"user\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

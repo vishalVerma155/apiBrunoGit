@@ -1,0 +1,65 @@
+info:
+  name: getAllStoreProductName
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:4500/store/getAllStoreProductsName
+  body:
+    type: text
+    data: "{\r
+
+      \    \"products\" : [\r
+
+      \            {\r
+
+      \                \"product\":\"68777ea48669f8d9ec757df7\",\r
+
+      \                \"quantity\": 1,\r
+
+      \                \"color\": \"#000000\",\r
+
+      \                \"size\": \"m\",\r
+
+      \                \"price\" : 1\r
+
+      \            }\r
+
+      \            // {\r
+
+      \            //     \"product\":\"68777ea48669f8d9ec757df7\", \r
+
+      \            //     \"quantity\": 1,\r
+
+      \            //     \"color\": \"#000000\",\r
+
+      \            //     \"size\": \"11\",\r
+
+      \            //     \"price\" : 999\r
+
+      \            // }\r
+
+      \        ],\r
+
+      \        \"shippingAddress\" : \"6878c29c718b6ea9287fca44\",\r
+
+      \        \"billingAddress\" : \"6878c29c718b6ea9287fca44\",\r
+
+      \        \"paymentMethod\" : \"online\",\r
+
+      \        \"shippingCost\" : 50,\r
+
+      \        \"transactionId\" : \"2345fde3r5511\",\r
+
+      \        \"userId\" : \"67fccf503778fca6da648852\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

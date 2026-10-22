@@ -1,0 +1,25 @@
+info:
+  name: getCouponsByVendor
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:4500/couponSection/getAllCouponsByVendor
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\" : \"\",\r
+
+      \    \"sortBy\" : \"validityHighToLow\" // priceLowHigh, priceHighLow, newToOld, oldToNew, validityLowToHigh, validityHighToLow   \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

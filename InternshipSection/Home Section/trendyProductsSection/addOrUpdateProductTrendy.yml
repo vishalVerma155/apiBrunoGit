@@ -1,0 +1,49 @@
+info:
+  name: addOrUpdateProductTrendy
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{intershipBaseUrl}}/home/addOrUpdateProductTrendySecton/698c50f58458cad1089d55d4"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"Internships\": [\r
+
+      \        {\r
+
+      \            \"InternshipId\": \"698b042ce731b2e690164488\",\r
+
+      \            \"type\": \"topRated\"\r
+
+      \        }\r
+
+      \        // {\r
+
+      \        //     \"CourseId\": \"691d95f841436644d1247182\",\r
+
+      \        //     \"type\": \"newArrival\"\r
+
+      \        // },\r
+
+      \        // {\r
+
+      \        //     \"CourseId\": \"691d67331968b94e4b6da6ff\",\r
+
+      \        //     \"type\": \"bestSeller\"\r
+
+      \        // }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

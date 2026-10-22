@@ -1,0 +1,29 @@
+info:
+  name: getAllCampaignsForAdmin
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4600/vendor/getAllCampaignForAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"name\" : \"testCampaign28\"\r
+
+      \    // \"userId\" : \"67bebb666875b5a46440a659\"\r
+
+      \r
+
+      \    // \"limit\":5\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

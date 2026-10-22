@@ -1,0 +1,43 @@
+info:
+  name: createMembershipModel
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/membership/createMembershipModel
+  body:
+    type: json
+    data: "{\r
+
+      \    \"heading\": \"Prestige Circle\",\r
+
+      \    \"subHeading\": \"Enhanced features with chat, priority email support\",\r
+
+      \    \"price\": \"AED 1,999 | ₹45,000 | $544\",\r
+
+      \    \"features\": [\r
+
+      \        \"Blog feature with backlinks\",\r
+
+      \        \"Mention in influencer blogs\",\r
+
+      \        \"Social stories with swipe-up\",\r
+
+      \        \"Side panel banner ads\",\r
+
+      \        \"Monthly newsletter highlight\",\r
+
+      \        \"One influencer collab (unboxing or mention)\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

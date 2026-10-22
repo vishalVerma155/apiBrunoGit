@@ -1,0 +1,77 @@
+info:
+  name: createPayment
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/cashFree/createPayment
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Dhruv Rohilla\",\r
+
+      \    \"phone\": \"9999999999\",\r
+
+      \    \"amount\": 235,\r
+
+      \    \"orderData\": {\r
+
+      \        \"products\": [\r
+
+      \            {\r
+
+      \                \"product\": \"6909ef918911f69d0279bae3\",\r
+
+      \                \"quantity\": 1,\r
+
+      \                \"color\": null,\r
+
+      \                \"size\": \"1pc\",\r
+
+      \                \"price\": 185\r
+
+      \            }\r
+
+      \        ],\r
+
+      \        \"shippingAddress\": \"6a72d953f814b5cbf3581453\",\r
+
+      \        \"billingAddress\": \"6a72d953f814b5cbf3581453\",\r
+
+      \        \"paymentMethod\": \"card\",\r
+
+      \        \"amount\": 235,\r
+
+      \        \"vendorShippingDetails\": {\r
+
+      \            \"6901efcddfe171e8672b53ac\": {\r
+
+      \                \"totalAmount\": 185,\r
+
+      \                \"shipping\": 50,\r
+
+      \                \"vendorName\": \"Brewverve\",\r
+
+      \                \"freeShippingThershold\": 500\r
+
+      \            }\r
+
+      \        },\r
+
+      \        \"shippingCost\": 50\r
+
+      \    },\r
+
+      \    \"email\": \"dhruvrohilla666@gmail.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

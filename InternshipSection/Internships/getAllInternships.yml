@@ -1,0 +1,39 @@
+info:
+  name: getAllInternships
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:4500/InternshipSection/getAllInternships
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"city\" : \"rohtak\",\r
+
+      \    // \"status\" : \"\",\r
+
+      \    // \"vendorId\" : \"\",\r
+
+      \    // \"sortBy\" : \"validityHighToLow\" // priceLowHigh, priceHighLow, newToOld, oldToNew, validityLowToHigh, validityHighToLow   \r
+
+      \    // \"maxPrice\": 10000 // max price\r
+
+      \    // \"minPrice\": 4000 // min price,\r
+
+      \    // \"page\": 1,\r
+
+      \    // \"limit\": 30\r
+
+      \    \"category\":\"6a92acf4ba12ca306cd28fa7\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

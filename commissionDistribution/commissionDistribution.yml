@@ -1,0 +1,25 @@
+info:
+  name: commissionDistribution
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/commissionDistribute
+  body:
+    type: json
+    data: "{\r
+
+      \    \"campaignId\" : \"6801f9175e19990825c96595\",\r
+
+      \    \"sellerId\" : \"67ee2403da32dceda9eed87d\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,25 @@
+info:
+  name: createSizesArray
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createSizesArray
+  body:
+    type: json
+    data: "{\"sizes\" :[\r
+
+      \"s\", \"m\", \"l\"\r
+
+      ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,71 @@
+info:
+  name: createCoursePayment
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/cashFree/createCoursePayment
+  body:
+    type: json
+    data: "// {\r
+
+      //   \"amount\": 4500,\r
+
+      //   \"name\": \"Vishal Verma\",\r
+
+      //   \"email\": \"vishal.verma@gmail.com\",\r
+
+      //   \"phone\": \"9876543210\",\r
+
+      //   \"orderData\": {\r
+
+      //     \"courseId\": \"69aa55f769910b830b050ac8\"\r
+
+      //     // \"code\" : \"8215\"\r
+
+      //   },\r
+
+      //   \"type\" : \"course\"\r
+
+      // //   \"userIddd\" : \"699589e3ae6d93147c0c7fd0\"\r
+
+      // }\r
+
+      {\r
+
+      \    \"amount\": 4500,\r
+
+      \    \"email\": \"jayantarora123a@gmail.com\",\r
+
+      \    \"name\": \"JAYANT\",\r
+
+      \    \"orderData\": {\r
+
+      \        \"courseId\": \"69a91a9a67e5eca926ebb586\",\r
+
+      \        \"code\": null,\r
+
+      \        \"saveProfile\": false\r
+
+      \    },\r
+
+      \    \"code\": null,\r
+
+      \    \"courseId\": \"69a9aff688650dda29f67a29\",\r
+
+      \    \"saveProfile\": false,\r
+
+      \    \"phone\": \"9306667393\",\r
+
+      \    \"type\": \"course\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

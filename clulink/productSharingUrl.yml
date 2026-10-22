@@ -1,0 +1,30 @@
+info:
+  name: productSharingUrl
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4500/api/partner-programs/productUrl
+  params:
+    - name: per_page
+      value: "20"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"campaignId\" : \"6a38b48a45792dc9e90255a7\"\r
+
+      \    \"productId\" : \"6a35177ea0c4afb2a3d712c9\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

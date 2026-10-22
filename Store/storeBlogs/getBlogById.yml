@@ -1,0 +1,37 @@
+info:
+  name: getBlogById
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:4500/store/blogs/getBlogById/6866591c6d467c4d348fb68a
+  body:
+    type: multipart-form
+    data:
+      - name: mainImage
+        type: file
+        value:
+          - postman-cloud:///1efe47f8-7f90-4c40-a462-156b937c3ff5
+      - name: subImages
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+          - postman-cloud:///1f00aea5-b5f6-4990-9faf-ac9ac783a972
+      - name: title
+        type: text
+        value: blog title
+      - name: content1
+        type: text
+        value: content1
+      - name: content2
+        type: text
+        value: content2
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

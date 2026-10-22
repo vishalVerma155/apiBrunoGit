@@ -1,0 +1,35 @@
+info:
+  name: createfeedback
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/customerFeedback/createFeedback
+  body:
+    type: multipart-form
+    data:
+      - name: rating
+        type: text
+        value: " 5"
+      - name: description
+        type: text
+        value: commwnt1
+      - name: userName
+        type: text
+        value: Vishal
+      - name: image
+        type: file
+        value:
+          - /C:/Users/HP/Pictures/gettyimages-2174008120-612x612.jpg
+      - name: type
+        type: text
+        value: affiliate
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

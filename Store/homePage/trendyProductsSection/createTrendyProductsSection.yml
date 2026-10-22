@@ -1,0 +1,23 @@
+info:
+  name: createTrendyProductsSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/registerTrendyProducts
+  body:
+    type: json
+    data: "{\r
+
+      \    \"products\" : [{\"productId\": \"6867886e36b83497ec6c9e84\", \"type\" : \"topRated\"}, {\"productId\": \"686788a636b83497ec6c9e8a\", \"type\" : \"newArrival\"}, {\"productId\": \"686788cb36b83497ec6c9e90\", \"type\" : \"bestSeller\"}]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

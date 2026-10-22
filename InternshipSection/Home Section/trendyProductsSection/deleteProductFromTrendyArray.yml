@@ -1,0 +1,25 @@
+info:
+  name: deleteProductFromTrendyArray
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{intershipBaseUrl}}/home/deleteTrendyProducts/698c50f58458cad1089d55d4/698c50f58458cad1089d55d5"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"courseId\" : \"691ec60d983e99ca04b4e76c\"\r
+
+      \    // \"type\" : \"bestSeller\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

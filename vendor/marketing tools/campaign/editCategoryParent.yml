@@ -1,0 +1,25 @@
+info:
+  name: editCategoryParent
+  type: http
+  seq: 18
+
+http:
+  method: PATCH
+  url: http://localhost:4500/vendor/editCategory/6aa51599294698e7aeac8a29
+  body:
+    type: json
+    data: "{\r
+
+      \"parentCategoryId\": \"6aa37f9a3487de0cb71e2015\"\r
+
+      // \"categoryId\" : \"68bbfc33f7f38be2a89f9369\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

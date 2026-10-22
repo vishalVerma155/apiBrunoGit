@@ -1,0 +1,23 @@
+info:
+  name: getCouponById
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:4500/couponSection/getCouponsById/68c2bb2d065148cde65c7093
+  body:
+    type: text
+    data: "{\r
+
+      \"title\" : \"test coupon 1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

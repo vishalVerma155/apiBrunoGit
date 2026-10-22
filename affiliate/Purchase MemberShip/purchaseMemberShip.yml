@@ -1,0 +1,47 @@
+info:
+  name: purchaseMemberShip
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/purchaseMemberShip
+  body:
+    type: json
+    data: "{\r
+
+      \    \"membershipId\": \"69ae7cab060d99968389ec87\",\r
+
+      \    \"buyerId\": \"69b7d9efc8ab20d98b23e20b\",\r
+
+      \    \"membershipDetails\": {\r
+
+      \        \"memberShipType\": \"Premium Membership\",\r
+
+      \        \"price\": 2999,\r
+
+      \        \"giftedMembership\": false,\r
+
+      \        \"durationInDays\": 365,\r
+
+      \        \"mostSelling\":false,\r
+
+      \        \"newTag\":true,\r
+
+      \        \"mlmLevel\":10\r
+
+      \    },\r
+
+      \    \"transactionId\": \"sdafghj\",\r
+
+      \    \"paymentMethod\": \"UPI\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

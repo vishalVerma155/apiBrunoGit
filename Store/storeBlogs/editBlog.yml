@@ -1,0 +1,40 @@
+info:
+  name: editBlog
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/blogs/updateBlog/6866582dd45b8e3f0d7ab96e
+  body:
+    type: multipart-form
+    data:
+      - name: mainImage
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+        disabled: true
+      - name: subImages
+        type: file
+        value:
+          - postman-cloud:///1f00aebd-1b5a-44a0-8933-9cc4db3fe0ea
+      - name: title
+        type: text
+        value: blog title edit
+        disabled: true
+      - name: content1
+        type: text
+        value: content1 edit
+        disabled: true
+      - name: content2
+        type: text
+        value: content2 edit
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

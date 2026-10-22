@@ -1,0 +1,7 @@
+info:
+  name: membershipModel
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit

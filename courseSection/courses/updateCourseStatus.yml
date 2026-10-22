@@ -1,0 +1,25 @@
+info:
+  name: updateCourseStatus
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/courseSection/updateCourseStatus
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\" : \"public\",\r
+
+      \    \"ids\" : [\"691d665919e28559c4aaf0d2\", \"691d67331968b94e4b6da6ff\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

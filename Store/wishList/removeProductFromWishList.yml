@@ -1,0 +1,16 @@
+info:
+  name: removeProductFromWishList
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:4500/store/removeProductFromWishlist/686788a636b83497ec6c9e8a
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

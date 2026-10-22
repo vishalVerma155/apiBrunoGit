@@ -1,0 +1,37 @@
+info:
+  name: purchaseIntership
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/InternshipSection/purchaseInternship
+  body:
+    type: json
+    data: "{\r
+
+      \    \"internshipId\": \"69a94f1167e5eca926ebc2fc\",\r
+
+      \    \"buyerId\": \"6a61fa890cec243d6a47c60d\",\r
+
+      \    \"transactionId\": \"asdfghjkljhshbhcdfddg341347ge11\",\r
+
+      \    \"paymentMethod\": \"upi\",\r
+
+      \    \"paymentDetails\": {\r
+
+      \        \"type\" : \"hello\"\r
+
+      \    },\r
+
+      \    \"couponApplied\" : false\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

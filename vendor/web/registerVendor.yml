@@ -1,0 +1,137 @@
+info:
+  name: registerVendor
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:4500/vendor/registerVendor
+  body:
+    type: json
+    data: "{\r
+
+      \    \"firstName\": \"New test Vendor\",\r
+
+      \    \"lastName\": \"vendor\",\r
+
+      \    \"email\": \"active.hyena@mail-king.io\",\r
+
+      \    \"phoneNumber\": \"8798989820\",\r
+
+      \    \"country\": \"india\",\r
+
+      \    \"password\": \"Admin@123\",\r
+
+      \    \"store\": \"New Module course test\",\r
+
+      \    \"aff_id\" : \"AF1516\"\r
+
+      }\r
+
+      \r
+
+      // internship vendor\r
+
+      \r
+
+      // {\r
+
+      //     \"firstName\": \"internship\",\r
+
+      //     \"lastName\": \"vendor\",\r
+
+      //     \"email\": \"internshipVendor@earninghandle.com\",\r
+
+      //     \"phoneNumber\": \"7778889990\",\r
+
+      //     \"userName\": \"internshipVendor\",\r
+
+      //     \"country\": \"india\",\r
+
+      //     \"password\": \"000000\",\r
+
+      //     \"store\": \"New Module InternShip\"\r
+
+      // }\r
+
+      \r
+
+      // course Vendor\r
+
+      \r
+
+      // {\r
+
+      //     \"firstName\": \"courses\",\r
+
+      //     \"lastName\": \"vendor\",\r
+
+      //     \"email\": \"courseVendor@earninghandle.com\",\r
+
+      //     \"phoneNumber\": \"7778889980\",\r
+
+      //     \"userName\": \"courseVendor\",\r
+
+      //     \"country\": \"india\",\r
+
+      //     \"password\": \"000000\",\r
+
+      //     \"store\": \"New Module course\"\r
+
+      // }internship vendor\r
+
+      \r
+
+      // {\r
+
+      //     \"firstName\": \"internship\",\r
+
+      //     \"lastName\": \"vendor\",\r
+
+      //     \"email\": \"internshipVendor@earninghandle.com\",\r
+
+      //     \"phoneNumber\": \"7778889990\",\r
+
+      //     \"userName\": \"internshipVendor\",\r
+
+      //     \"country\": \"india\",\r
+
+      //     \"password\": \"000000\",\r
+
+      //     \"store\": \"New Module InternShip\"\r
+
+      // }\r
+
+      \r
+
+      // course Vendor\r
+
+      \r
+
+      // {\r
+
+      //     \"firstName\": \"courses\",\r
+
+      //     \"lastName\": \"vendor\",\r
+
+      //     \"email\": \"courseVendor@earninghandle.com\",\r
+
+      //     \"phoneNumber\": \"7778889980\",\r
+
+      //     \"userName\": \"courseVendor\",\r
+
+      //     \"country\": \"india\",\r
+
+      //     \"password\": \"000000\",\r
+
+      //     \"store\": \"New Module course\"\r
+
+      // }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

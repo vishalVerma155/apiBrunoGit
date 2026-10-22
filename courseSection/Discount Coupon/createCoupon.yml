@@ -1,0 +1,49 @@
+info:
+  name: createCoupon
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://api.earninghandle.com/discountCoupon/createCoupon
+  body:
+    type: json
+    data: "{\r
+
+      \  \"title\": \"SOURAV\",\r
+
+      \  \"description\": \"Get flat 5000 discount\",\r
+
+      \  \"discountType\": \"FLAT\", // PERCENT or FLAT,\r
+
+      \  \"code\":\"SOURAV5000\",\r
+
+      \  \"discountValue\": 5000,\r
+
+      \  \"maxDiscountAmount\": 5000,\r
+
+      \  \"minOrderValue\": 25000,\r
+
+      \  \"couponType\": \"USER_SHARED\", // PLATFORM or USER_SHARED if USER_SHARED then ownerUserId is required\r
+
+      \  \"ownerUserId\":\"69f47b60ace2b5463782bb19\",\r
+
+      \  \"usageLimit\": 1,\r
+
+      \  \"usagePerUser\": 1,\r
+
+      \  \"validFrom\": \"2026-07-15\",\r
+
+      \  \"validTill\": \"2026-07-17\",\r
+
+      \  \"validFor\" : \"internship\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

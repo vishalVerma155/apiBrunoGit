@@ -1,0 +1,31 @@
+info:
+  name: listAllSoldCoursesByAdmin
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/listAllSoldCoursesByAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\" : \"\",\r
+
+      \    \"vendorId\" : \"\",\r
+
+      \    \"startDate\" : \"\",\r
+
+      \    \"endDate\" : \"\",\r
+
+      \    \"buyerId\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

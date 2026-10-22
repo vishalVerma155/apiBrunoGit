@@ -1,0 +1,35 @@
+info:
+  name: createCategory
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/InternshipSection/createCategory"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: test category 5
+      - name: features
+        type: text
+        value: FGHJK
+      - name: features
+        type: text
+        value: bjnkl
+      - name: image
+        type: file
+        value:
+          - /C:/Users/assis/OneDrive/Desktop/natureImage.webp
+      - name: parent
+        type: text
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

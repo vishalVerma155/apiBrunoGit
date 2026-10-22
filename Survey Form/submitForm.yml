@@ -1,0 +1,47 @@
+info:
+  name: submitForm
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/survey/submitForm
+  body:
+    type: json
+    data: "{\r
+
+      \  \"full_name\": \"Rahul Sharma\",\r
+
+      \  \"phone\": \"9306667379\",\r
+
+      \  \"email\": \"jayantarora123a@gmail.com\",\r
+
+      \  \"age_group\": \"18-25\",\r
+
+      \  \"city\": \"Delhi\",\r
+
+      \  \"state\": \"Delhi\",\r
+
+      \  \"user_type\": \"Freelancer\",\r
+
+      \  \"heard_from\": \"Instagram\",\r
+
+      \  \"time_commitment\": \"4-6 hours/day\",\r
+
+      \  \"expected_earning\": \"50000-80000\",\r
+
+      \  \"experience\": \"2 years\",\r
+
+      \  \"platforms\": \"Upwork, Fiverr\",\r
+
+      \  \"motivation\": \"I want to earn extra income while working from home and grow my freelancing career.\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

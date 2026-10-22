@@ -1,0 +1,27 @@
+info:
+  name: addProductInCart
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/addProductInCart/68bbc093f7f38be2a89f8ce4
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"color\" : \"#FFFFFF\",  if color is existed then color otherwise null\r
+
+      \    \"size\" : \"1pc\",  //if size is existed then color otherwise null\r
+
+      \    \"quantity\" : 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

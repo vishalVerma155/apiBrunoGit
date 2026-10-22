@@ -1,0 +1,16 @@
+info:
+  name: getQuery
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:4500/contectAdmin/getQuery/67d01674f83c8cd5e825d563
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

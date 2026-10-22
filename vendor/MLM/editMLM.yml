@@ -1,0 +1,36 @@
+info:
+  name: editMLM
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:4500/MLM/editMLM/6ac0d1adc6540cc72969596a
+  body:
+    type: json
+    data: |-
+      {
+          "totalMLMLevel": 2,
+          "adminCommission": 20,
+        "totalCommission" : 30,
+        "commissionType" : "percentage",
+          "commissions": [
+              {
+                  "level": 1,
+                  "commission": 6
+              },
+              {
+                  "level": 2,
+                  "commission": 2
+              }
+          ],
+        "fixedCommission" : 0
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

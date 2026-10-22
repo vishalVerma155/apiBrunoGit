@@ -1,0 +1,31 @@
+info:
+  name: purchaseCoupon
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/couponSection/purchaseCoupon
+  body:
+    type: json
+    data: "{\r
+
+      \    \"couponId\" : \"68c2bccd065148cde65c7096\",\r
+
+      \    \"purchasePrice\" : 600,\r
+
+      \    \"value\" : 800,\r
+
+      \    \"buyerId\" : \"68ca4bca9f3264951be6b8ee\"\r
+
+      \    // \"referrerAffiliate\" : \"68c79fd4db474ae7679638fa\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

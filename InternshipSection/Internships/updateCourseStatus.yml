@@ -1,0 +1,25 @@
+info:
+  name: updateCourseStatus
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/InternshipSection/updateInternshipStatus
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\" : \"public\",\r
+
+      \    \"ids\" : [\"698b042ce731b2e690164488\", \"698af9b51b856c35c7f7d5b8\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

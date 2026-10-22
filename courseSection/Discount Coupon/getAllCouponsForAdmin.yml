@@ -1,0 +1,27 @@
+info:
+  name: getAllCouponsForAdmin
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/discountCoupon/getAllCouponsForAdmin
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"couponType\": \"PLATFORM\" //\"PLATFORM\", \"USER_SHARED\"\r
+
+      \    // \"ownerUserId\": \"694a7c5cd00521d9bf1a4a5c\"\r
+
+      \    // \"isActive\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

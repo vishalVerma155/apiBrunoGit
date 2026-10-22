@@ -1,0 +1,39 @@
+info:
+  name: createCommission
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/commission/createCommission
+  body:
+    type: json
+    data: "{\r
+
+      \    \"giverId\": \"68a404def358202d178e6b6a\",\r
+
+      \    \"getterId\": \"6a7c0f9e86cf0c1cd536bd99\",\r
+
+      \    \"type\": \"affiliate commission\",\r
+
+      \    \"totalSaleAmount\": \"100\",\r
+
+      \    \"commissionPercentage\": \"10.5\",\r
+
+      \    \"integrationType\": \"sale integration\",\r
+
+      \    \"transactionId\": \"122nbg3ag212fabaaa\",\r
+
+      \    \"giverType\" : \"admin\",\r
+
+      \    \"orderId\" : \"6a7d489db3a7b40c5f059907\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

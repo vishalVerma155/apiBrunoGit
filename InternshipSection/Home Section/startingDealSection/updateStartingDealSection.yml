@@ -1,0 +1,35 @@
+info:
+  name: updateStartingDealSection
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/internshipSection/home/updateStartingDealSection/69a947d167e5eca926ebc13a
+  body:
+    type: multipart-form
+    data:
+      - name: startingDealSectionImage
+        type: file
+        value:
+          - /D:/intership Banner 2.png
+      - name: title
+        type: text
+        value: testcheck
+        disabled: true
+      - name: subTitle
+        type: text
+        value: up
+        disabled: true
+      - name: categoryId
+        type: text
+        value: 691da61c41436644d124742e
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

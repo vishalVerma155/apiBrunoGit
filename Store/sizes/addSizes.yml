@@ -1,0 +1,19 @@
+info:
+  name: addSizes
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/addSizes
+  body:
+    type: json
+    data: "{\r\n    \"sizes\" : [\"250ml\"]\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

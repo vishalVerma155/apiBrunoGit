@@ -1,0 +1,25 @@
+info:
+  name: appleSignIn
+  type: http
+  seq: 20
+
+http:
+  method: POST
+  url: http://localhost:4500/affiliate/appleSignIn
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\" : \"sdfghjkl@gmail.com\",\r
+
+      \    \"id_token\" : \"eyJraWQiOiIxRTZWaW9JYU5JIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoib3JnLnJlYWN0anMubmF0aXZlLmV4YW1wbGUuZWFybmluZ2hhbmRsZSIsImV4cCI6MTc3NTAzNTYyMywiaWF0IjoxNzc0OTQ5MjIzLCJzdWIiOiIwMDA5NDIuNzMyZTQyYWFjZTE3NDNmY2ExYTc4Yzk5ZWYzODRlZWMuMTEwMCIsIm5vbmNlIjoiNjc0Yjk3MTMwN2FiNDhkZTUwYmU3NTI2MzZhYzA0OWFlZGMwYjgwMzZkZTBiNTA5OGJiNzYyMjkzYmFhMDkwZCIsImNfaGFzaCI6InZRTTgxbVZoYmdkTDJUOThhV1hyb0EiLCJlbWFpbCI6Imlubm92aXpldGVjaHNvbHV0aW9ucHZ0bHRkQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdXRoX3RpbWUiOjE3NzQ5NDkyMjMsIm5vbmNlX3N1cHBvcnRlZCI6dHJ1ZX0.ZdzbckX81Th_y77QALbCKalYbveTdvPT76Zxtx2Gb5dWcZ9HeBgFu28sdu_-EyxfGcZLE3XSFMSFjorYU7kBfxNGki7F6oloIBmgP4YlRqqoTXJ_jXsdEWPhxLxbb9aN6aigvS26TIAQcIHKu2q7HB0imM-e6QmkzE3ISD74eyWwTZ5oorF3qC0nIPJ0Reow1jWHqpF5wTkwTY_Ha-IxNiS3gCxJACCVHqB_PFO7Un2ThAv8YOLr6wnDb2XQkmtS11BleFtFWbLGSfO5P7-aFfO022zaDefZ_b94Z5je53WVj2NwnDbrcIxiOJhg9Jx-_wOrJDzD36d0FkwC32qo8Q\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: getReferredCoursesByAffiliates
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:4500/courseSection/referredCoursesByAffiliate
+  body:
+    type: text
+    data: "{\r
+
+      \    \"status\" : \"\",\r
+
+      \    \"vendorId\" : \"\",\r
+
+      \    \"startDate\" : \"\",\r
+
+      \    \"endDate\" : \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,29 @@
+info:
+  name: registerDealOfTheSWeekSection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/home/registerDealOfTheWeekSection
+  body:
+    type: multipart-form
+    data:
+      - name: dealOfTheWeekSectionImage
+        type: file
+        value:
+          - postman-cloud:///1f019c18-e0af-4270-bb0f-c961c6d12ee3
+      - name: productId
+        type: text
+        value: 686e0c676a679a05d5e5269a
+      - name: date
+        type: text
+        value: 2025-07-12
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

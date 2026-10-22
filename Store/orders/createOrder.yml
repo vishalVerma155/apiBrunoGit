@@ -1,0 +1,95 @@
+info:
+  name: createOrder
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4500/store/createOrder
+  body:
+    type: json
+    data: "{\r
+
+      \    \"products\" : [\r
+
+      \            {\r
+
+      \                \"product\":\"68bbbc0cf7f38be2a89f8bc2\",\r
+
+      \                \"quantity\": 3,\r
+
+      \                // \"color\": \"#000000\",\r
+
+      \                // \"size\": \"m\",\r
+
+      \                \"price\" : 1\r
+
+      \            },\r
+
+      \            {\r
+
+      \                \"product\":\"68bbbca3f7f38be2a89f8bdc\",\r
+
+      \                \"quantity\": 4,\r
+
+      \                // \"color\": \"#000000\",\r
+
+      \                // \"size\": \"m\",\r
+
+      \                \"price\" : 1\r
+
+      \            }\r
+
+      \            // {\r
+
+      \            //     \"product\":\"68777ea48669f8d9ec757df7\", \r
+
+      \            //     \"quantity\": 1,\r
+
+      \            //     \"color\": \"#000000\",\r
+
+      \            //     \"size\": \"11\",\r
+
+      \            //     \"price\" : 999\r
+
+      \            // }\r
+
+      \        ],\r
+
+      \        \"shippingAddress\" : \"68ca68981dbca4830b9fb08e\",\r
+
+      \        \"billingAddress\" : \"68ca68981dbca4830b9fb08e\",\r
+
+      \        \"paymentMethod\" : \"online\",\r
+
+      \        \"shippingCost\" : 50,\r
+
+      \        \"transactionId\" : \"2345fde3r5511122231\",\r
+
+      \        \"userId\" : \"68ce449fd4e0840f389f9102\",\r
+
+      \        \"shipingDetails\":  {\r
+
+      \        \"68bbb1b3f7f38be2a89f8a3d\": {\r
+
+      \            \"totalAmount\": 1,\r
+
+      \            \"shipping\": 50,\r
+
+      \            \"vendorName\": \"NIK BAKERS\",\r
+
+      \            \"freeShippingThershold\": 500\r
+
+      \        }\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

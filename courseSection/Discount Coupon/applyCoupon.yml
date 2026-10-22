@@ -1,0 +1,27 @@
+info:
+  name: applyCoupon
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://api.earninghandle.co.in/discountCoupon/applyCoupon
+  body:
+    type: json
+    data: "{\r
+
+      \    \"code\": \"JAYANT100\",\r
+
+      \    \"orderAmount\": 3499,\r
+
+      \    // \"product\" : \"internship\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

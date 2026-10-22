@@ -1,0 +1,46 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://www.cuelinks.com/api/v2/missing-transactions
+  headers:
+    - name: Authorization
+      value: Token token=D12CBJE6Jp7eeiz066AIHnmnRnXs3v6iahZyLf473Gg
+  body:
+    type: multipart-form
+    data:
+      - name: campaign_id
+        type: text
+        value: "123"
+      - name: order_number
+        type: text
+        value: dfsfsdf
+      - name: transaction_date
+        type: text
+        value: 12-06-2026
+      - name: sale_amount
+        type: text
+        value: "1"
+      - name: coupon_code
+        type: text
+        value: ""
+      - name: source
+        type: text
+        value: text123
+      - name: attachment
+        type: file
+        value: []
+      - name: ticket_id
+        type: text
+        value: "234434"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

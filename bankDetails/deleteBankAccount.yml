@@ -1,0 +1,16 @@
+info:
+  name: deleteBankAccount
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:4500/bank/deleteBankDetail/67b9ada3898469969f7eb4db
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

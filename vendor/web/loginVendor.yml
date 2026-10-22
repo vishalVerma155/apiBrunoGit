@@ -1,0 +1,29 @@
+info:
+  name: loginVendor
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4500/vendor/loginVendor
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"userName\" : \"vn@05.com\", // products\r
+
+      \    \"userName\" : \"vn24@earninghandle.com\" , // courses\r
+
+      \    // \"password\" : \"123456789\" //courses\r
+
+      \        \"password\" : \"Admin@123\" //products\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

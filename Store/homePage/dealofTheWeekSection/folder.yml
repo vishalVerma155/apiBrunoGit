@@ -1,0 +1,7 @@
+info:
+  name: dealofTheWeekSection
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

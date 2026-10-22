@@ -1,0 +1,16 @@
+info:
+  name: getCampaign
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: http://localhost:4500/vendor/getCampaign/685396aadfafbafffeb0a4ab
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

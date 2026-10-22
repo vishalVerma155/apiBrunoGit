@@ -1,0 +1,25 @@
+info:
+  name: getPaymentreceiptById
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:4500/store/getPayemntReceipt/68874e8a6877fe8fd622d1f9
+  body:
+    type: text
+    data: "{\r
+
+      \    \"userName\" : \"vendor@2.com\",\r
+
+      \    \"password\" : \"12345678\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

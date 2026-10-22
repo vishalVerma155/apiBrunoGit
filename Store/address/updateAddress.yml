@@ -1,0 +1,25 @@
+info:
+  name: updateAddress
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:4500/store/updateAddress/6870deb3be2f4adf82127739
+  body:
+    type: json
+    data: "{\r
+
+      \    \"streetAddress\" : \"Gohana hur\",\r
+
+      \    \"city\": \"bhiwani\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

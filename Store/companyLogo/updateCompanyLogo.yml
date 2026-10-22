@@ -1,0 +1,27 @@
+info:
+  name: updateCompanyLogo
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:4500/store/updateCompanyLogo/697daf170f0f8a9d0e1fee20
+  body:
+    type: multipart-form
+    data:
+      - name: companyLogo
+        type: file
+        value:
+          - postman-cloud:///1efce59c-e1e0-45e0-97d5-ba463cb296dc
+        disabled: true
+      - name: theme
+        type: text
+        value: white
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

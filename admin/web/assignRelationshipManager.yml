@@ -1,0 +1,25 @@
+info:
+  name: assignRelationshipManager
+  type: http
+  seq: 15
+
+http:
+  method: PATCH
+  url: http://localhost:4500/admin/assignRelationshipManager
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\" :[\"68a822208002766f9e3286d6\", \"68a822228002766f9e3286dd\"],\r
+
+      \    \"relationShipManagerId\" : \"693ff04a4410c2339881002b\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
